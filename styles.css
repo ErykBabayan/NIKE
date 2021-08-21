@@ -62,29 +62,29 @@ header {
 	flex: 50%;
 	}
 .image_1 img{
-	position: absolute;
+	
 	width: 128.19px;
 	height: 134.6px;
-	left: 280px;
-	top: 250px;
-	
-	background-image:
-}
+	margin-left: 30px;
+	margin-top: 30px;
+		
+	background-color:black:
+	}
 .tekst_1{
-	position: absolute;
+	
 	width: 225.08px;
 	height: 24.11px;
-	left: 30.14px;
-	top: 260px;
-	
+	margin-left: 30.14px;
+	margin-top: 20px;
+		
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 21px;
-	
+		
 	color: #FFFFFF;
-}
+	}
 .button_1 {
 	width: 20vh;
 	background-color: #F0B90B;;
@@ -93,10 +93,10 @@ header {
 	line-height: 19px;
 	font-style:normal;
 	border-radius: 5px;
-    position: absolute;
-    left: 50px;
-    top: 390px;
-    overflow-y: scroll;
-    border:none;
-  }
+	  
+	margin-left: 50px;
+	margin-top: 110px;
+	overflow-y: scroll;
+	border:none;
+	}
 /* HEADER */ /* HEADER */ /* HEADER */
