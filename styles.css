@@ -63,6 +63,7 @@ header {
 
 .column_1 {
 	flex: 50%;
+<<<<<<< HEAD
 }
 .image_1 img {
 	position: absolute;
@@ -80,14 +81,39 @@ header {
 	left: 30.14px;
 	top: 260px;
 
+=======
+	}
+.image_1 img{
+	
+	width: 128.19px;
+	height: 134.6px;
+	margin-left: 30px;
+	margin-top: 30px;
+		
+	background-color:black:
+	}
+.tekst_1{
+	
+	width: 225.08px;
+	height: 24.11px;
+	margin-left: 30.14px;
+	margin-top: 20px;
+		
+>>>>>>> 2c5813132480120146c68d310c37407393d16952
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 21px;
+<<<<<<< HEAD
 
 	color: #ffffff;
 }
+=======
+		
+	color: #FFFFFF;
+	}
+>>>>>>> 2c5813132480120146c68d310c37407393d16952
 .button_1 {
 	width: 20vh;
 	background-color: #f0b90b;
@@ -96,6 +122,7 @@ header {
 	line-height: 19px;
 	font-style: normal;
 	border-radius: 5px;
+<<<<<<< HEAD
 	position: absolute;
 	left: 50px;
 	top: 390px;
@@ -104,3 +131,12 @@ header {
 }
 
 /*INVITE_SECTION*/ /*INVITE_SECTION*/ /*INVITE_SECTION*/
+=======
+	  
+	margin-left: 50px;
+	margin-top: 110px;
+	overflow-y: scroll;
+	border:none;
+	}
+/* HEADER */ /* HEADER */ /* HEADER */
+>>>>>>> 2c5813132480120146c68d310c37407393d16952
