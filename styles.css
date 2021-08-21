@@ -33,9 +33,10 @@ header {
 }
 
 .menu-button {
-	margin-right: 5%;
 	width: 40px;
 	float: right;
+	margin-top: -195px;
+	margin-right: 5%;
 }
 .menu-icon {
 	background-color: white;
