@@ -1,7 +1,49 @@
-div {
-	width: 30vw;
-	height: 30vh;
-	background-color: brown;
-	display: inline-block;
-	margin: 15%;
+:root {
+	--vd-blue: #181a20;
+	--nike-golden: #f0b90b;
 }
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* HEADER */ /* HEADER */ /* HEADER */
+header {
+	background-color: var(--vd-blue);
+	display: flex;
+	justify-content: space-between;
+}
+.header {
+	width: 100%;
+	height: 30vh;
+}
+/*
+.logo img {
+	height: 200px;
+	max-width: 260px;
+}*/
+
+.logo {
+	background-image: url(images/Logo_prototype.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 250px;
+}
+
+.menu-button {
+	margin-right: 5%;
+	width: 40px;
+	float: right;
+}
+.menu-icon {
+	background-color: white;
+	height: 4px;
+	margin: 6px 0;
+}
+.menu-button:hover > .menu-icon {
+	background-color: var(--nike-golden);
+}
+
+/* HEADER */ /* HEADER */ /* HEADER */
