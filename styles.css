@@ -45,5 +45,13 @@ header {
 .menu-button:hover > .menu-icon {
 	background-color: var(--nike-golden);
 }
+.page_1{
+	position: absolute;
+	width: 415px;
+	height: 857px;
+	left: -3px;
+	top: 0px;
+	overflow-y: scroll;
 
+}
 /* HEADER */ /* HEADER */ /* HEADER */
