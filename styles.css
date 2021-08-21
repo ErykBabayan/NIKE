@@ -46,57 +46,61 @@ header {
 .menu-button:hover > .menu-icon {
 	background-color: var(--nike-golden);
 }
-.page_1{
+/* HEADER */ /* HEADER */ /* HEADER */
+
+/*INVITE_SECTION*/ /*INVITE_SECTION*/ /*INVITE_SECTION*/
+.page_1 {
 	width: 100%;
 	height: 30vh;
 	top: 0px;
 	overflow-y: scroll;
-	
+
 	background-color: black;
 }
 .row_1 {
 	display: flex;
-	}
-  
-.column_1{
+}
+
+.column_1 {
 	flex: 50%;
-	}
-.image_1 img{
+}
+.image_1 img {
 	position: absolute;
 	width: 128.19px;
 	height: 134.6px;
 	left: 280px;
 	top: 250px;
-	
-	background-image:
+
+	background-image: ;
 }
-.tekst_1{
+.tekst_1 {
 	position: absolute;
 	width: 225.08px;
 	height: 24.11px;
 	left: 30.14px;
 	top: 260px;
-	
+
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 21px;
-	
-	color: #FFFFFF;
+
+	color: #ffffff;
 }
 .button_1 {
 	width: 20vh;
-	background-color: #F0B90B;;
+	background-color: #f0b90b;
 	padding: 14px 28px;
 	font-size: 16px;
 	line-height: 19px;
-	font-style:normal;
+	font-style: normal;
 	border-radius: 5px;
-    position: absolute;
-    left: 50px;
-    top: 390px;
-    overflow-y: scroll;
-    border:none;
-  }
-/* HEADER */ /* HEADER */ /* HEADER */
+	position: absolute;
+	left: 50px;
+	top: 390px;
+	overflow-y: scroll;
+	border: none;
+}
+
+/*INVITE_SECTION*/ /*INVITE_SECTION*/ /*INVITE_SECTION*/
