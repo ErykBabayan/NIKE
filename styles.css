@@ -49,7 +49,7 @@ header {
 /* HEADER */ /* HEADER */ /* HEADER */
 
 /*INVITE_SECTION*/ /*INVITE_SECTION*/ /*INVITE_SECTION*/
-.page_1 {
+.invite-section {
 	width: 100%;
 	height: 30vh;
 	top: 0px;
@@ -57,39 +57,23 @@ header {
 
 	background-color: black;
 }
-.row_1 {
+.invite-row {
 	display: flex;
 }
 
-.column_1 {
+.invite-column {
 	flex: 50%;
 }
-.image_1 img {
-	position: absolute;
-	width: 128.19px;
-	height: 134.6px;
-	left: 280px;
-	top: 250px;
-}
-.tekst_1 {
-	position: absolute;
-	width: 225.08px;
-	height: 24.11px;
-	left: 30.14px;
-	top: 260px;
-}
-.image_1 img {
-	width: 128.19px;
-	height: 134.6px;
-	margin-left: 30px;
-	margin-top: 30px;
-
-	background-color: black;
+.invite-success-img img{
+	width: 130px;
+	height: 130px;
+	margin-left: 50px;
+	margin-top: 35px;
 }
 inv-section-img {
 	background-color: #0b0e11;
 }
-.tekst_1 {
+.invite-text {
 	width: 225.08px;
 	height: 24.11px;
 	margin-left: 30.14px;
@@ -103,19 +87,19 @@ inv-section-img {
 
 	color: #ffffff;
 }
-.button_1 {
-	width: 20vh;
+.call-us-button {
+	width: 180px;
 	background-color: #f0b90b;
 	padding: 14px 28px;
 	font-size: 16px;
 	line-height: 19px;
 	font-style: normal;
 	border-radius: 5px;
-	position: absolute;
-	left: 50px;
-	top: 390px;
+	margin-left: 40px;
+	margin-top: 100px;
 	overflow-y: scroll;
 	border: none;
 }
+
 
 /*INVITE_SECTION*/ /*INVITE_SECTION*/ /*INVITE_SECTION*/
