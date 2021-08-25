@@ -16,29 +16,23 @@ header {
 }
 .header {
 	width: 100%;
-	height: 120px;
+	height: 8rem;
 }
-/*
-.logo img {
-	height: 200px;
-	max-width: 260px;
-}*/
 
 .logo {
 	background-image: url(images/Logo/Standard/Original\ on\ Transparent.png);
 	background-size: contain;
 	background-repeat: no-repeat;
-	width: 250px;
-	height: 250px;
+	width: 16em;
+	height: 100px;
 	margin-top: 1rem;
 	margin-left: 0.3rem;
-	margin-left: clamp(0.3rem);
 }
 
 .menu-button {
 	width: 40px;
 	float: right;
-	margin-top: -215px;
+	margin-top: -60px;
 	margin-right: 3%;
 }
 .menu-icon {
@@ -53,6 +47,10 @@ header {
 @media screen and (min-width: 350px) {
 	.logo {
 		margin-left: clamp(0.3rem, 8vw, 6rem);
+		height: 100%;
+		width: 80%;
+		margin: 0;
+		margin: 0.2em 0 0 0.2em;
 	}
 	.menu-button {
 		margin-right: clamp(0.3rem, 10vw, 10rem);
@@ -64,6 +62,7 @@ header {
 /*INVITE_SECTION*/ /*INVITE_SECTION*/ /*INVITE_SECTION*/
 .invite-section {
 	height: 35vh;
+	min-height: 180px;
 	background-color: black;
 }
 .invite-row {
