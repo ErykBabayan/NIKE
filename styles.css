@@ -1,9 +1,13 @@
+@import url("https://use.typekit.net/xwb3qfr.css");
 :root {
 	--vd-blue: #181a20;
 	--nike-golden: #f0b90b;
 }
 
 * {
+	font-family: acumin-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	padding: 0;
 	margin: 0;
 }
@@ -60,7 +64,7 @@ header {
 /*INVITE_SECTION*/ /*INVITE_SECTION*/ /*INVITE_SECTION*/
 .invite-section {
 	height: 35vh;
-	min-height: 260px;
+	min-height: 280px;
 	background-color: black;
 }
 .invite-row {
@@ -79,14 +83,13 @@ header {
 	height: auto;
 	width: 90%;
 	max-height: 160px;
-	margin-top: 1em;
+	margin-top: 1.5em;
 }
 
 .invite-text {
 	width: 100%;
 	max-width: 160px;
 	padding: 1em 1em 0em 1.5em;
-	font-family: Roboto;
 	font-size: 0.95em;
 	color: #ffffff;
 }
@@ -96,10 +99,15 @@ header {
 	padding: 14px 28px;
 	font-size: 16px;
 	line-height: 8px;
-	font-style: normal;
 	border-radius: 5px;
-	margin: 1.5em 0 0 1.5em;
+	margin: 0.4em 0 0 1.5em;
 	border: none;
+}
+
+@media screen and (min-width: 350px) {
+	.call-us-button {
+		margin-top: 1.5em;
+	}
 }
 
 /*INVITE_SECTION*/ /*INVITE_SECTION*/ /*INVITE_SECTION*/
@@ -109,7 +117,7 @@ header {
 	border-radius: 30px 30px 0px 0px;
 	background: white;
 	width: 100%;
-	height: 500px;
+
 	margin-top: -75px;
 }
 
@@ -117,17 +125,12 @@ header {
 	text-decoration: underline;
 	text-decoration-color: orange;
 	text-align: center;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 28px;
 	line-height: 80px;
-
 	color: #000000;
 }
 .about_us-text {
 	text-align: center;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 19px;
 	line-height: 23px;
 
@@ -137,8 +140,6 @@ header {
 	text-decoration: underline;
 	text-decoration-color: orange;
 	text-align: center;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 25px;
 	line-height: 100px;
 
@@ -146,8 +147,6 @@ header {
 }
 .professionalists-text {
 	height: 60px;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 19px;
 	line-height: 20px;
 	margin-left: -68px;
