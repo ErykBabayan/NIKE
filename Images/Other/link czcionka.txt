@@ -1,1 +1,3 @@
 <link rel="stylesheet" href="https://use.typekit.net/xwb3qfr.css">
+
+https://fonts.adobe.com/fonts/acumin
