@@ -10,6 +10,7 @@
 	font-style: normal;
 	padding: 0;
 	margin: 0;
+	text-underline-offset: 0.2em;
 }
 
 /* HEADER */ /* HEADER */ /* HEADER */
@@ -170,45 +171,42 @@ header {
 /*INVITE_SECTION*/ /*INVITE_SECTION*/ /*INVITE_SECTION*/
 
 /*ABOUT_US_SECTION*/ /*ABOUT_US_SECTION*/ /*ABOUT_US_SECTION*/
+
 .about_us-section {
 	border-radius: 30px 30px 0px 0px;
 	background: white;
 	width: 100%;
-
 	margin-top: -75px;
+	height: 400px;
 }
 
 .about_us-head {
 	text-decoration: underline;
-	text-decoration-color: orange;
+	text-decoration-color: var(--nike-golden);
+	padding-top: 1em;
+	margin-bottom: 1em;
+	border-width: 2px;
 	text-align: center;
 	font-size: 28px;
-	line-height: 80px;
-	color: #000000;
 }
 .about_us-text {
+	margin: 0 0.5em 0 0.5em;
 	text-align: center;
 	font-size: 19px;
 	line-height: 23px;
-
-	color: #000000;
 }
 .professionalists-head {
 	text-decoration: underline;
-	text-decoration-color: orange;
+	text-decoration-color: var(--nike-golden);
 	text-align: center;
 	font-size: 25px;
-	line-height: 100px;
-
-	color: #000000;
+	line-height: 80px;
 }
 .professionalists-text {
 	height: 60px;
 	font-size: 19px;
 	line-height: 20px;
 	margin-left: -68px;
-
-	color: #000000;
 }
 .competition-image img {
 	height: auto;
@@ -229,3 +227,120 @@ header {
 	float: left;
 	width: 70%;
 }
+
+/*Circle-section*/ /*Circle-section*/ /*Circle-section*/
+
+.circles-head {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 22px;
+	text-decoration: underline;
+	text-decoration-color: var(--nike-golden);
+}
+
+.animated-circles {
+	padding-top: 30px;
+	margin: auto;
+	text-align: center;
+	place-items: center;
+	margin-top: 30px;
+	background-color: var(--nike-dark-blue);
+	border-radius: 30px;
+}
+
+.circular {
+	margin: auto;
+	width: 50%;
+	height: 150px;
+	width: 150px;
+	position: relative;
+}
+.inner {
+	position: absolute;
+	z-index: 6;
+	top: 50%;
+	left: 50%;
+	height: 140px;
+	width: 140px;
+	margin: -70px 0 0 -70px;
+	background: #181a20;
+	border-radius: 100%;
+}
+.number-years,
+.number-clients,
+.number-optimisation {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	font-size: 2.5em;
+	font-weight: 500;
+	color: #fff;
+}
+.bar {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #181a20;
+	-webkit-border-radius: 100%;
+	clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-text {
+	color: #fff;
+	margin: auto;
+	font-size: 1.3em;
+	margin: 20px 0 70px 0;
+}
+
+.bar .progress {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	-webkit-border-radius: 100%;
+	clip: rect(0px, 75px, 180px, 0px);
+	background: #f0b90b;
+}
+.left-clients .progress {
+	z-index: 1;
+	animation: left 0.5s ease-in both;
+}
+.left-years .progress {
+	z-index: 1;
+	animation: left 1s ease-in both;
+}
+.left-optimisation .progress {
+	z-index: 1;
+	animation: left 1s ease-in both;
+}
+@keyframes left {
+	100% {
+		transform: rotate(180deg);
+	}
+}
+.right-clients,
+.right-years,
+.right-optimisation {
+	transform: rotate(180deg);
+	z-index: 3;
+}
+.right-clients .progress {
+	animation: right 0.4s ease-in-out both;
+	animation-delay: 0.45s;
+}
+.right-years .progress {
+	animation: right 0.4s ease-in-out both;
+	animation-delay: 0.95s;
+}
+.right-optimisation .progress {
+	animation: right 0.4s ease-in-out both;
+	animation-delay: 0.95s;
+}
+@keyframes right {
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+/*Circle-section*/ /*Circle-section*/ /*Circle-section*/

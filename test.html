@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="teststyles.css" />
+	</head>
+	<body>
+		<div class="circular">
+			<div class="inner"></div>
+			<div class="number">100%</div>
+			<div class="circle">
+				<div class="bar left">
+					<div class="progress" id="progress"></div>
+				</div>
+				<div class="bar right">
+					<div class="progress" id="progress"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	const numb = document.querySelector(".number");
+	let counter = 0;
+	setInterval(() => {
+		if (counter == 100) {
+			clearInterval();
+		} else {
+			counter += 1;
+			numb.textContent = counter + "%";
+		}
+	}, 15);
+</script>

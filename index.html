@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
-		<link rel="icon" href="Images/Logo/Standard/Website_icon.png" />
+		<link rel="icon" href="Images/Logo/Favicon.png" />
 		<link rel="stylesheet" href="https://use.typekit.net/xwb3qfr.css" />
 		<title>Biuro Rachunkowe NIKE</title>
 	</head>
@@ -82,12 +82,7 @@
 		</section>
 		<section class="about_us-section">
 			<h1 class="about_us-head">Nieco o nas</h1>
-			<p class="about_us-text">
-				Jesteśmy biurem rachunkowym <br />
-				pracującym z pasją dla ludzi. Od 2012 <br />
-				roku pomagamy rozwijać działalności <br />
-				innych
-			</p>
+			<p class="about_us-text">Jesteśmy biurem rachunkowym pracującym z pasją dla ludzi. Od 2012 roku pomagamy rozwijać działalności innych</p>
 			<h2 class="professionalists-head">Jesteśmy profesjonalistami</h2>
 			<div class="professionalists-row">
 				<div class="professionalists-column">
@@ -102,10 +97,90 @@
 				</div>
 				<div class="professionalists-column">
 					<div class="competition-image">
-						<img src="Images/Page1/RACHUNKOWOŚCI LOGO 2020 400.png" alt="" />
+						<img src="Images/photos/RACHUNKOWOŚCI LOGO 2020 400.png" alt="" />
 					</div>
 				</div>
 			</div>
+		</section>
+
+		<div class="circles-head">Liczby mówią same za siebie</div>
+		<section class="animated-circles">
+			<div class="circular">
+				<div class="inner"></div>
+				<div class="number-clients">100%</div>
+				<div class="circle">
+					<div class="bar left-clients">
+						<div class="progress" id="progress"></div>
+					</div>
+					<div class="bar right-clients">
+						<div class="progress" id="progress"></div>
+					</div>
+				</div>
+			</div>
+			<div class="circle-text">Zadowolonych klientów</div>
+
+			<div class="circular">
+				<div class="inner"></div>
+				<div class="number-years">10</div>
+				<div class="circle">
+					<div class="bar left-years">
+						<div class="progress" id="progress"></div>
+					</div>
+					<div class="bar right-years">
+						<div class="progress" id="progress"></div>
+					</div>
+				</div>
+			</div>
+			<div class="circle-text">Lat na rynku</div>
+
+			<div class="circular">
+				<div class="inner"></div>
+				<div class="number-optimisation">5000</div>
+				<div class="circle">
+					<div class="bar left-optimisation">
+						<div class="progress" id="progress"></div>
+					</div>
+					<div class="bar right-optimisation">
+						<div class="progress" id="progress"></div>
+					</div>
+				</div>
+			</div>
+			<div class="circle-text">Optymalizacji podatkowej</div>
+
+			<script>
+				const numberClients = document.querySelector(".number-clients");
+				let counterClients = 0;
+				setInterval(() => {
+					if (counterClients == 100) {
+						clearInterval();
+					} else {
+						counterClients += 2;
+						numberClients.textContent = counterClients + "%";
+					}
+				}, 15);
+
+				const numberYears = document.querySelector(".number-years");
+				let counterYears = 0;
+				setInterval(() => {
+					if (counterYears == 10) {
+						clearInterval();
+					} else {
+						counterYears += 1;
+						numberYears.textContent = counterYears;
+					}
+				}, 120);
+
+				const numberOptimisation = document.querySelector(".number-optimis");
+				let counterYears = 0;
+				setInterval(() => {
+					if (counterYears == 10) {
+						clearInterval();
+					} else {
+						counterYears += 1;
+						numberOptimisation.textContent = counterYears;
+					}
+				}, 120);
+			</script>
 		</section>
 	</body>
 </html>
