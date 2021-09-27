@@ -54,7 +54,7 @@ header {
 	height: 100%;
 	width: 0; /* 0 width - change this with JavaScript */
 	position: fixed; /* Stay in place */
-	z-index: 1; /* Stay on top */
+	z-index: 50; /* Stay on top */
 	top: 0; /* Stay at the top */
 	right: 0; /* Stick to the right */
 	padding-top: 100px;
@@ -69,10 +69,10 @@ header {
 	text-align: left;
 	text-decoration: none;
 	font-size: clamp(1.25em, 5vw, 2em);
-	color: #ffffff;
 	display: block;
 	left: 30%;
 	position: relative;
+	color: white;
 }
 
 .sidenav-icon {
@@ -152,7 +152,6 @@ header {
 	color: #ffffff;
 }
 .call-us-button {
-	color: black;
 	width: 120px;
 	background-color: #f0b90b;
 	padding: 14px 28px;
@@ -163,9 +162,10 @@ header {
 	border: none;
 	cursor: pointer;
 }
-a:visited,
-a:link,
-a:hover {
+
+.call-us-button a:visited,
+.call-us-button a:link,
+.call-us-button a:hover {
 	color: black;
 	text-decoration: none;
 }
@@ -236,17 +236,6 @@ a:hover {
 	width: 60%;
 }
 /*ABOUT_US_SECTION*/ /*ABOUT_US_SECTION*/ /*ABOUT_US_SECTION*/
-
-/*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/
-.new_businesses-head {
-	text-decoration: underline;
-	text-decoration-color: orange;
-	font-size: 1.44em;
-	line-height: 8em;
-	color: #000000;
-	text-underline-position: under;
-	text-align: center;
-}
 
 /*Circle-section*/ /*Circle-section*/ /*Circle-section*/
 
@@ -332,7 +321,7 @@ a:hover {
 }
 .left-optimisation .progress {
 	z-index: 1;
-	animation: left 1s ease-in both;
+	animation: left 1.2s ease-in both;
 }
 @keyframes left {
 	100% {
@@ -354,8 +343,8 @@ a:hover {
 	animation-delay: 0.95s;
 }
 .right-optimisation .progress {
-	animation: right 0.4s ease-in-out both;
-	animation-delay: 0.95s;
+	animation: right 1s ease-in-out both;
+	animation-delay: 1.15s;
 }
 @keyframes right {
 	100% {
@@ -364,3 +353,15 @@ a:hover {
 }
 
 /*Circle-section*/ /*Circle-section*/ /*Circle-section*/
+
+/*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/
+.new_businesses-head {
+	text-decoration: underline;
+	text-decoration-color: orange;
+	font-size: 1.44em;
+	line-height: 8em;
+	text-underline-position: under;
+	text-align: center;
+}
+
+/*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/

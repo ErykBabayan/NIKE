@@ -135,7 +135,7 @@
 
 			<div class="circular">
 				<div class="inner"></div>
-				<div class="number-optimisation">5000</div>
+				<div class="number-optimisation">5000zł</div>
 				<div class="circle">
 					<div class="bar left-optimisation">
 						<div class="progress" id="progress"></div>
@@ -158,7 +158,8 @@
 						numberClients.textContent = counterClients + "%";
 					}
 				}, 15);
-
+			</script>
+			<script>
 				const numberYears = document.querySelector(".number-years");
 				let counterYears = 0;
 				setInterval(() => {
@@ -169,17 +170,18 @@
 						numberYears.textContent = counterYears;
 					}
 				}, 120);
-
-				const numberOptimisation = document.querySelector(".number-optimis");
-				let counterYears = 0;
+			</script>
+			<script>
+				const numberOptimisation = document.querySelector(".number-optimisation");
+				let counterOptimisation = 0;
 				setInterval(() => {
-					if (counterYears == 10) {
+					if (counterOptimisation == 5000) {
 						clearInterval();
 					} else {
-						counterYears += 1;
-						numberOptimisation.textContent = counterYears;
+						counterOptimisation += 25;
+						numberOptimisation.textContent = counterOptimisation + "zł";
 					}
-				}, 120);
+				}, 7);
 			</script>
 		</section>
 	</body>
