@@ -247,7 +247,7 @@ header {
 }
 
 section.animated-circles {
-	padding-top: 30px;
+	padding: 15vw 0 10vw 0;
 	margin: auto;
 	text-align: center;
 	margin-top: 30px;
@@ -299,7 +299,7 @@ section.animated-circles {
 .circle-text {
 	color: #fff;
 	margin: auto;
-	font-size: 1.3em;
+	font-size: 1.55em;
 	margin: 20px 0 70px 0;
 }
 
@@ -312,18 +312,12 @@ section.animated-circles {
 	clip: rect(0px, 75px, 180px, 0px);
 	background: #f0b90b;
 }
-.left-clients .progress {
+.left-clients,
+.left-years,
+.left-optimisation {
 	z-index: 1;
-	animation: left 0.5s ease-in both;
 }
-.left-years .progress {
-	z-index: 1;
-	animation: left 1s ease-in both;
-}
-.left-optimisation .progress {
-	z-index: 1;
-	animation: left 1.2s ease-in both;
-}
+
 @keyframes left {
 	100% {
 		transform: rotate(180deg);
@@ -335,18 +329,7 @@ section.animated-circles {
 	transform: rotate(180deg);
 	z-index: 3;
 }
-.right-clients .progress {
-	animation: right 0.4s ease-in-out both;
-	animation-delay: 0.45s;
-}
-.right-years .progress {
-	animation: right 0.4s ease-in-out both;
-	animation-delay: 0.95s;
-}
-.right-optimisation .progress {
-	animation: right 1s ease-in-out both;
-	animation-delay: 1.15s;
-}
+
 @keyframes right {
 	100% {
 		transform: rotate(180deg);

@@ -7,6 +7,8 @@
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="icon" href="Images/Logo/Favicon.png" />
 		<link rel="stylesheet" href="https://use.typekit.net/xwb3qfr.css" />
+		<script src="observer.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<title>Biuro Rachunkowe NIKE</title>
 	</head>
 	<body>
@@ -105,13 +107,13 @@
 		<section class="animated-circles">
 			<div class="circular">
 				<div class="inner"></div>
-				<div class="number-clients">100%</div>
+				<div class="number-clients"></div>
 				<div class="circle">
 					<div class="bar left-clients">
-						<div class="progress" id="progress"></div>
+						<div class="progress" id="progress-left-clients"></div>
 					</div>
 					<div class="bar right-clients">
-						<div class="progress" id="progress"></div>
+						<div class="progress" id="progress-right-clients"></div>
 					</div>
 				</div>
 			</div>
@@ -119,13 +121,13 @@
 
 			<div class="circular">
 				<div class="inner"></div>
-				<div class="number-years">10</div>
+				<div class="number-years" id="anim-trigger"></div>
 				<div class="circle">
 					<div class="bar left-years">
-						<div class="progress" id="progress"></div>
+						<div class="progress" id="progress-left-years"></div>
 					</div>
 					<div class="bar right-years">
-						<div class="progress" id="progress"></div>
+						<div class="progress" id="progress-right-years"></div>
 					</div>
 				</div>
 			</div>
@@ -133,54 +135,21 @@
 
 			<div class="circular">
 				<div class="inner"></div>
-				<div class="number-optimisation">5000zł</div>
+				<div class="number-optimisation"></div>
 				<div class="circle">
 					<div class="bar left-optimisation">
-						<div class="progress" id="progress"></div>
+						<div class="progress" id="progress-left-optimisation"></div>
 					</div>
 					<div class="bar right-optimisation">
-						<div class="progress" id="progress"></div>
+						<div class="progress" id="progress-right-optimisation"></div>
 					</div>
 				</div>
 			</div>
-			<div class="circle-text">Optymalizacji podatkowej</div>
+			<div class="circle-text">Średnia kwota optymalizacji podatkowej</div>
 
-			<script>
-				const numberClients = document.querySelector(".number-clients");
-				let counterClients = 0;
-				setInterval(() => {
-					if (counterClients == 100) {
-						clearInterval();
-					} else {
-						counterClients += 2;
-						numberClients.textContent = counterClients + "%";
-					}
-				}, 15);
-			</script>
-			<script>
-				const numberYears = document.querySelector(".number-years");
-				let counterYears = 0;
-				setInterval(() => {
-					if (counterYears == 10) {
-						clearInterval();
-					} else {
-						counterYears += 1;
-						numberYears.textContent = counterYears;
-					}
-				}, 120);
-			</script>
-			<script>
-				const numberOptimisation = document.querySelector(".number-optimisation");
-				let counterOptimisation = 0;
-				setInterval(() => {
-					if (counterOptimisation == 5000) {
-						clearInterval();
-					} else {
-						counterOptimisation += 20;
-						numberOptimisation.textContent = counterOptimisation + "zł";
-					}
-				}, 7);
-			</script>
+			<script></script>
+			<script></script>
+			<script></script>
 		</section>
 	</body>
 </html>
