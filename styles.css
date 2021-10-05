@@ -299,7 +299,7 @@ section.animated-circles {
 .circle-text {
 	color: #fff;
 	margin: auto;
-	font-size: 1.55em;
+	font-size: 1.5em;
 	margin: 20px 0 70px 0;
 }
 
@@ -333,6 +333,34 @@ section.animated-circles {
 @keyframes right {
 	100% {
 		transform: rotate(180deg);
+	}
+}
+
+@media screen and (min-width: 375px) {
+	.circular {
+		height: 225px;
+		width: 226px;
+	}
+	.inner {
+		height: 210px;
+		width: 210px;
+		margin: -105px 0 0 -105px;
+	}
+	.number-years,
+	.number-clients,
+	.number-optimisation {
+		font-size: 3em;
+	}
+	.bar {
+		clip: rect(0px, 226px, 225px, 112.5px);
+	}
+
+	.circle-text {
+		font-size: 1.7em;
+	}
+
+	.bar .progress {
+		clip: rect(0px, 112.5px, 270px, 0px);
 	}
 }
 
