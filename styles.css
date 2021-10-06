@@ -241,7 +241,7 @@ header {
 .circles-head {
 	text-align: center;
 	margin-top: 15vh;
-	font-size: 25px;
+	font-size: 24px;
 	text-decoration: underline;
 	text-decoration-color: var(--nike-golden);
 }
@@ -338,13 +338,13 @@ section.animated-circles {
 
 @media screen and (min-width: 375px) {
 	.circular {
-		height: 225px;
-		width: 226px;
+		height: 195px;
+		width: 196px;
 	}
 	.inner {
-		height: 210px;
-		width: 210px;
-		margin: -105px 0 0 -105px;
+		height: 183px;
+		width: 183px;
+		margin: -91px 0 0 -91px;
 	}
 	.number-years,
 	.number-clients,
@@ -352,7 +352,7 @@ section.animated-circles {
 		font-size: 3em;
 	}
 	.bar {
-		clip: rect(0px, 226px, 225px, 112.5px);
+		clip: rect(0px, 196px, 195px, 97.5px);
 	}
 
 	.circle-text {
@@ -360,7 +360,7 @@ section.animated-circles {
 	}
 
 	.bar .progress {
-		clip: rect(0px, 112.5px, 270px, 0px);
+		clip: rect(0px, 97.5px, 234px, 0px);
 	}
 }
 
@@ -375,5 +375,54 @@ section.animated-circles {
 	text-underline-position: under;
 	text-align: center;
 }
+.startup-img {
+	width: 100%;
+	height: 50vh;
+	margin-top: 10vh;
+	background-color: cadetblue;
+}
+.startup-head {
+	text-decoration: underline;
+	text-align: center;
+	text-decoration-color: var(--nike-golden);
+	margin: 5vh 0 5vh 0;
+}
+.startup-text {
+	max-width: 80%;
+	margin-left: 10vw;
+	text-align: center;
+	font-size: 18px;
+}
 
-/*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/
+.startup-rectangle-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.startup-rectangle {
+	width: 80vw;
+	height: 19vh;
+	max-width: 300px;
+	max-height: 130px;
+	margin: auto;
+	border: 3px solid var(--nike-golden);
+	border-radius: 20px;
+
+	margin-bottom: 5vh;
+}
+.startup-icon img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1%;
+	width: 50%;
+	max-width: 25%;
+}
+.startup-rectangle-text {
+	text-align: center;
+	padding: 2% 5% 0 5%;
+}
+.middle-text {
+	padding: 0%;
+}
+/*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/ ;
