@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/xwb3qfr.css");
 :root {
+	--nike-light-black: #2b3139;
 	--nike-dark-blue: #181a20;
 	--nike-golden: #f0b90b;
 }
@@ -403,12 +404,13 @@ section.animated-circles {
 	width: 80vw;
 	height: 19vh;
 	max-width: 300px;
-	max-height: 130px;
+	min-height: 130px;
+	max-height: 140px;
 	margin: auto;
 	border: 3px solid var(--nike-golden);
 	border-radius: 20px;
 
-	margin-bottom: 5vh;
+	margin-bottom: 8vw;
 }
 .startup-icon img {
 	display: block;
@@ -424,5 +426,44 @@ section.animated-circles {
 }
 .middle-text {
 	padding: 0%;
+}
+
+.startup-button-container {
+	margin: auto;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+}
+
+.startup-call-us-button a:visited,
+.startup-call-us-button a:link,
+.startup-call-us-button a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.startup-offer-button a:visited,
+.startup-offer-button a:link,
+.startup-offer-button a:hover {
+	color: white;
+	text-decoration: none;
+}
+.startup-offer-button,
+.startup-call-us-button {
+	width: 120px;
+	background-color: var(--nike-golden);
+	padding: 14px 28px;
+	font-size: 16px;
+	line-height: 8px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	margin: 1rem 0 3rem 0;
+}
+
+.startup-offer-button {
+	margin-left: 5vw;
+	color: white;
+	background-color: var(--nike-light-black);
 }
 /*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/ ;
