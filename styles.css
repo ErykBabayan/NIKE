@@ -466,4 +466,56 @@ section.animated-circles {
 	color: white;
 	background-color: var(--nike-light-black);
 }
-/*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/ ;
+/*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/
+
+/*REFFERAL-PROGRAM*/ /*REFFERAL-PROGRAM*/ /*REFFERAL-PROGRAM*/
+
+.refferal-head {
+	text-decoration: underline;
+	text-align: center;
+	text-decoration-color: var(--nike-golden);
+	margin: 8vw;
+}
+.refferal-container {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.refferal-text {
+	padding-right: 5vw;
+	width: 60%;
+}
+.refferal-icon {
+	padding-bottom: 2vw;
+}
+
+/*REFFERAL-PROGRAM*/ /*REFFERAL-PROGRAM*/ /*REFFERAL-PROGRAM*/
+
+/*FOOTER*/ /*FOOTER*/ /*FOOTER*/
+
+.footer {
+	background-color: var(--nike-dark-blue);
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-top: 5vh;
+	padding: 5vw 0;
+}
+.footer-icon {
+	width: 50px;
+	height: 50px;
+}
+footer-icon-container {
+	display: flex;
+	justify-content: center;
+}
+.footer-text {
+	color: white;
+	text-align: center;
+}
+.contact-icon-container {
+	margin: 0 10vw;
+}
+
+/*FOOTER*/ /*FOOTER*/ /*FOOTER*/
