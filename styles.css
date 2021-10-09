@@ -139,16 +139,16 @@ header {
 }
 
 .invite-success-img img {
-	height: auto;
+	height: 90%;
 	width: 90%;
 	max-height: 160px;
 	margin-top: 1.5em;
 }
 
 .invite-text {
-	width: 100%;
-	max-width: 160px;
-	padding: 1em 1em 0em 1.5em;
+	width: 90%;
+	max-width: 300px;
+	padding: 1em 1em 0.1em 0.7em;
 	font-size: 0.95em;
 	color: #ffffff;
 }
@@ -202,7 +202,7 @@ header {
 	text-align: center;
 	font-size: 19px;
 }
-.professionalists-head {
+.about_us-head_2 {
 	text-decoration: underline;
 	text-decoration-color: var(--nike-golden);
 	text-align: center;
@@ -210,7 +210,7 @@ header {
 	padding-top: 5vh;
 	margin-bottom: 5vh;
 }
-.professionalists-text {
+.about_us-text_2 {
 	height: 60px;
 	font-size: 110%;
 	line-height: 25px;
@@ -225,13 +225,13 @@ header {
 	margin-top: -4em;
 	margin-left: 105%;
 }
-.professionalists-row {
+.about_us-row {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
 }
 
-.professionalists-column {
+.about_us-column {
 	float: left;
 	width: 60%;
 }
