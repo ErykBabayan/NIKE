@@ -492,6 +492,38 @@ section.animated-circles {
 
 /*REFFERAL-PROGRAM*/ /*REFFERAL-PROGRAM*/ /*REFFERAL-PROGRAM*/
 
+/*COOKIES*/ /*COOKIES*/ /*COOKIES*/
+
+.cookies-banner-section {
+	background-color: var(--nike-dark-blue);
+	position: fixed;
+	z-index: 10;
+	width: 90%;
+	bottom: 2%;
+	left: 5%;
+	transition: 1s;
+}
+
+.cookies-banner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding: 5vw;
+}
+.cookies-button {
+	margin-top: 5%;
+	width: 120px;
+	padding: 3px;
+	background-color: #f0b90b;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+}
+
+/*COOKIES*/ /*COOKIES*/ /*COOKIES*/
+
 /*FOOTER*/ /*FOOTER*/ /*FOOTER*/
 
 .footer {
