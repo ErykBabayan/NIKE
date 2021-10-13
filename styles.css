@@ -498,10 +498,8 @@ section.animated-circles {
 	background-color: var(--nike-dark-blue);
 	position: fixed;
 	z-index: 10;
-	width: 90%;
-	bottom: 2%;
-	left: 5%;
-	transition: 1s;
+	width: 100%;
+	bottom: 0;
 }
 
 .cookies-banner {
@@ -512,6 +510,13 @@ section.animated-circles {
 	color: white;
 	padding: 5vw;
 }
+.cookies-text a,
+.cookies-text a:active,
+.cookies-text a:visited,
+.cookies-text a:hover {
+	color: var(--nike-golden);
+}
+
 .cookies-button {
 	margin-top: 5%;
 	width: 120px;
