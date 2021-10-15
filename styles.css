@@ -152,9 +152,10 @@ header {
 	font-size: 0.95em;
 	color: #ffffff;
 }
+
 .call-us-button {
 	width: 120px;
-	background-color: #f0b90b;
+	background-color: var(--nike-golden);
 	padding: 14px 28px;
 	font-size: 16px;
 	line-height: 8px;
@@ -163,6 +164,10 @@ header {
 	border: none;
 	cursor: pointer;	
 }
+.call-us-button:hover{
+	background-color: rgb(255, 217, 0);
+}
+
 .call-us-button a:visited,
 .call-us-button a:link,
 .call-us-button a:hover {
