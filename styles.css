@@ -148,7 +148,7 @@ header {
 .invite-text {
 	width: 90%;
 	max-width: 300px;
-	padding: 1em 1em 0.1em 0.7em;
+	padding: 1em 1em 0.1em 1.3em;
 	font-size: 0.95em;
 	color: #ffffff;
 }
@@ -161,9 +161,8 @@ header {
 	border-radius: 5px;
 	margin: 0.4em 0 0 1.5em;
 	border: none;
-	cursor: pointer;
+	cursor: pointer;	
 }
-
 .call-us-button a:visited,
 .call-us-button a:link,
 .call-us-button a:hover {
