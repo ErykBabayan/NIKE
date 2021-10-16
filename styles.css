@@ -372,20 +372,21 @@ section.animated-circles {
 /*Circle-section*/ /*Circle-section*/ /*Circle-section*/
 
 /*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/
-.new_businesses-head {
-	text-decoration: underline;
-	text-decoration-color: orange;
-	font-size: 1.44em;
-	line-height: 8em;
-	text-underline-position: under;
-	text-align: center;
-}
+
 .startup-img {
-	width: 100%;
-	height: 50vh;
-	margin-top: 10vh;
-	background-color: cadetblue;
+	width: 50%;
+	height: 50%;
+	margin-top: 0vh;
+
 }
+.startup-bussineses-img {
+	width: 100vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
 .startup-head {
 	text-decoration: underline;
 	text-align: center;
@@ -393,10 +394,12 @@ section.animated-circles {
 	margin: 5vh 0 5vh 0;
 }
 .startup-text {
-	max-width: 80%;
-	margin-left: 10vw;
+	margin-left: auto;
 	text-align: center;
 	font-size: 16px;
+	max-width: 100%;
+	background-size: cover;
+
 }
 
 .startup-rectangle-container {
