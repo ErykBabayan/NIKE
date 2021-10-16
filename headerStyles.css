@@ -1,0 +1,164 @@
+@import url("https://use.typekit.net/xwb3qfr.css");
+:root {
+	--nike-light-black: #2b3139;
+	--nike-dark-blue: #181a20;
+	--nike-golden: #f0b90b;
+}
+
+* {
+	font-family: acumin-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	padding: 0;
+	margin: 0;
+	text-underline-offset: 0.2em;
+}
+
+/* HEADER */ /* HEADER */ /* HEADER */
+header {
+	background-color: var(--nike-dark-blue);
+	display: flex;
+	justify-content: space-between;
+}
+.header {
+	width: 100%;
+	height: 8rem;
+}
+
+.logo {
+	background-image: url(Images/Logo/Logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 16em;
+	height: 100px;
+	margin-top: 1rem;
+	margin-left: 0.3rem;
+	text-indent: -9999px;
+}
+
+.menu-button {
+	width: 40px;
+	float: right;
+	margin: -60px 1%;
+}
+.menu-icon {
+	background-color: white;
+	height: 4px;
+	margin: 6px 0 0 0;
+}
+.menu-button:hover > .menu-icon {
+	background-color: var(--nike-golden);
+}
+
+/* The side navigation menu */
+.sidenav {
+	height: 100%;
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 50; /* Stay on top */
+	top: 0; /* Stay at the top */
+	right: 0; /* Stick to the right */
+	padding-top: 100px;
+	background-color: var(--nike-dark-blue);
+	overflow: hidden; /* Disable horizontal scroll */
+	transition: 0.35s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+	margin: 0px 0px 16px 0px;
+	text-align: left;
+	text-decoration: none;
+	font-size: clamp(1.25em, 5vw, 2em);
+	display: block;
+	left: 30%;
+	position: relative;
+	color: white;
+}
+
+.sidenav-icon {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 45px;
+	left: 8%;
+}
+
+.sidenav a:hover {
+	color: var(--nike-golden);
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+	position: absolute;
+	top: 40px;
+	right: 25px;
+	font-size: 2.5em;
+	left: initial;
+}
+@media screen and (min-width: 320px) {
+	.sidenav a {
+		left: 28%;
+	}
+
+	.sidenav-icon {
+		left: 5%;
+	}
+}
+
+@media screen and (min-width: 350px) {
+	.logo {
+		margin-top: 0.3rem;
+		margin-left: 0.5rem;
+		height: 90%;
+		width: 80%;
+	}
+	.menu-button {
+		margin: -65px 3% 0 0;
+	}
+}
+/*CONTACT_SECTION*/ /*CONTACT_SECTION*/ /*CONTACT_SECTION*/
+.contact-section{
+
+    height: auto;
+	min-height: 280px;
+	background-color: black;
+    padding: 1vh 1vh 1vh 1vh;
+
+}
+.open-hours{
+  
+    width: 90vw;
+    max-width: 367px;
+    height: 13vh;
+    max-height: 120px;
+    margin: 2vh auto;
+    
+    background: #181A20;
+    border-radius: 15px;
+
+
+}
+.open-hours-header{
+    margin-left: 40%;
+    font-size: 2.5vh;
+    
+    color: var(--nike-golden)
+}
+.open-hours-text{
+    margin-top: 10px;
+    margin-left: 9vh;
+    font-size: 2vh;
+    line-height: 25px;
+    text-align: center;
+    
+    color: #FFFFFF;
+
+
+}
+.open-hours-img{
+    
+    margin: -5.3rem 0 0 0.2vh;
+
+
+}
