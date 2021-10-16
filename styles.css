@@ -12,6 +12,7 @@
 	padding: 0;
 	margin: 0;
 	text-underline-offset: 0.2em;
+	box-sizing: border-box;
 }
 
 /* HEADER */ /* HEADER */ /* HEADER */
@@ -119,6 +120,56 @@ header {
 }
 
 /* HEADER */ /* HEADER */ /* HEADER */
+
+/*POP-UP*/ /*POP-UP*/ /*POP-UP*/
+
+.pop-up-section {
+	position: fixed;
+	background-color: #fff;
+	top: 50;
+	left: 15vw;
+	z-index: 15;
+	display: none;
+}
+
+.close-button {
+	position: absolute;
+	right: 20px;
+	font-size: 2.5em;
+	left: initial;
+}
+.pop-up-head {
+	text-decoration: underline;
+	text-decoration-color: var(--nike-golden);
+	padding-top: 10vh;
+	margin-bottom: 3vh;
+	text-align: center;
+	font-size: 2em;
+}
+.pop-up-container {
+	display: flex;
+	align-items: center;
+	padding: 3vh;
+}
+.pop-up-offer {
+	text-align: center;
+}
+
+.pop-up-buttons-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.pop-up-buttons-container .call-us-button {
+	margin: 0px;
+	margin-top: 10%;
+}
+.close-text {
+	width: 100%;
+	text-align: center;
+}
+
+/*POP-UP*/ /*POP-UP*/ /*POP-UP*/
 
 /*INVITE_SECTION*/ /*INVITE_SECTION*/ /*INVITE_SECTION*/
 .invite-section {
