@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="headerStyles.css" />
+		<link rel="icon" href="Images/Logo/Favicon.png" />
+		<link rel="stylesheet" href="https://use.typekit.net/xwb3qfr.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script defer src="observer.js"></script>
+
+		<title>Biuro Rachunkowe NIKE</title>
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<div class="logo">Logo</div>
+				<div class="menu-button" onclick="openNav()">
+					<div class="menu-icon"></div>
+					<div class="menu-icon"></div>
+					<div class="menu-icon"></div>
+				</div>
+			</div>
+			<div id="side-nav" class="sidenav">
+				<div id="delay">
+					<a class="closebtn" onclick="closeNav()">&times;</a>
+					<div>
+						<img src="Images/icons/offer icon.png" alt="offer icon" class="sidenav-icon" />
+						<a href="">Oferta</a>
+					</div>
+					<div>
+						<img src="Images/icons/contact icon.png" alt="contact icon" class="sidenav-icon" />
+						<a href="">Kontakt</a>
+					</div>
+					<div>
+						<img src="Images/icons/start offer icon.png" alt="start offer icon" class="sidenav-icon" />
+						<a href="">Oferta na start</a>
+					</div>
+					<div>
+						<img src="Images/icons/handshake affiliate icon.png" alt="affiliate program icon" class="sidenav-icon" />
+						<a href="">Program poleceń</a>
+					</div>
+					<div>
+						<img src="Images/icons/privacy policy icon gold.png" alt="privacy policy icon" class="sidenav-icon" />
+						<a href="">Polityka prywatności</a>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				var delayInMillisecondsOnClose = 80;
+				var delayInMillisecondsOnOpen = 150;
+
+				function closeNav() {
+					document.getElementById("side-nav").style.width = "0";
+					setTimeout(function () {
+						document.getElementById("delay").style.display = "none";
+					}, delayInMillisecondsOnClose);
+				}
+
+				function openNav() {
+					document.getElementById("side-nav").style.width = "85%";
+					setTimeout(function () {
+						document.getElementById("delay").style.display = "initial";
+					}, delayInMillisecondsOnOpen);
+				}
+			</script>
+        </header>  
+            <section class="contact-section">
+                <div class="open-hours">
+                        <div class="open-hours-header"><p>Godziny otwarcia</p></div>
+                        <div class="open-hours-text"><p>Pon-Pt<br> 8-16</p></div>
+                        <div class="open-hours-img"><img  src="Images/icons/icons8-time-100 (1).png" alt=""> </div>
+                
+                </div>
+            </section>
+
+
+
+
+           
+        
+    </body>          

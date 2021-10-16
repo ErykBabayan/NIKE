@@ -199,20 +199,24 @@ header {
 .invite-text {
 	width: 90%;
 	max-width: 300px;
-	padding: 1em 1em 0.1em 0.7em;
+	padding: 1em 1em 0.1em 1.3em;
 	font-size: 0.95em;
 	color: #ffffff;
 }
+
 .call-us-button {
 	width: 120px;
-	background-color: #f0b90b;
+	background-color: var(--nike-golden);
 	padding: 14px 28px;
 	font-size: 16px;
 	line-height: 8px;
 	border-radius: 5px;
 	margin: 0.4em 0 0 1.5em;
 	border: none;
-	cursor: pointer;
+	cursor: pointer;	
+}
+.call-us-button:hover{
+	background-color: rgb(255, 217, 0);
 }
 
 .call-us-button a:visited,
@@ -419,20 +423,21 @@ section.animated-circles {
 /*Circle-section*/ /*Circle-section*/ /*Circle-section*/
 
 /*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/
-.new_businesses-head {
-	text-decoration: underline;
-	text-decoration-color: orange;
-	font-size: 1.44em;
-	line-height: 8em;
-	text-underline-position: under;
-	text-align: center;
-}
+
 .startup-img {
-	width: 100%;
-	height: 50vh;
-	margin-top: 10vh;
-	background-color: cadetblue;
+	width: 50%;
+	height: 50%;
+	margin-top: 0vh;
+
 }
+.startup-bussineses-img {
+	width: 100vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
 .startup-head {
 	text-decoration: underline;
 	text-align: center;
@@ -440,10 +445,12 @@ section.animated-circles {
 	margin: 5vh 0 5vh 0;
 }
 .startup-text {
-	max-width: 80%;
-	margin-left: 10vw;
+	margin-left: auto;
 	text-align: center;
 	font-size: 16px;
+	max-width: 100%;
+	background-size: cover;
+
 }
 
 .startup-rectangle-container {
