@@ -1,3 +1,20 @@
+@import url("https://use.typekit.net/xwb3qfr.css");
+:root {
+	--nike-light-black: #2b3139;
+	--nike-dark-blue: #181a20;
+	--nike-golden: #f0b90b;
+}
+
+* {
+	font-family: acumin-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	padding: 0;
+	margin: 0;
+	text-underline-offset: 0.2em;
+	box-sizing: border-box;
+}
+
 /*CONTACT_SECTION*/ /*CONTACT_SECTION*/ /*CONTACT_SECTION*/
 .contact-section {
 	height: auto;
@@ -31,5 +48,61 @@
 	color: #ffffff;
 }
 .open-hours-img {
-	margin: -5.3rem 0 0 0.2vh;
+	margin: -5.3rem 0 0 1vh;
+}
+.telephone {
+	width: 90vw;
+	max-width: 367px;
+	height: 13vh;
+	max-height: 120px;
+	margin: 5vh auto;
+
+	background: #181a20;
+	border-radius: 15px;
+}
+.telephone-header {
+	margin-left: 53%;
+	font-size: 2.5vh;
+
+	color: var(--nike-golden);
+}
+.telephone-text {
+	margin-top: 10px;
+	margin-left: 10vh;
+	font-size: 2vh;
+	line-height: 25px;
+	text-align: center;
+
+	color: #ffffff;
+}
+.telephone-img {
+	margin: -3.9rem 0 0 1vh;
+}
+.e-mail {
+	width: 90vw;
+	max-width: 367px;
+	height: 13vh;
+	max-height: 120px;
+	margin: 5vh auto;
+
+	background: #181a20;
+	border-radius: 15px;
+}
+.e-mail-header {
+	margin-left: 53%;
+	font-size: 2.5vh;
+
+	color: var(--nike-golden);
+}
+.e-mail-text {
+	margin-top: 10px;
+	margin-left: 10vh;
+	font-size: 2vh;
+	line-height: 25px;
+	text-align: center;
+
+	color: #ffffff;
+}
+.e-mail-img {
+	margin: -3.9rem 0 0 1vh;
 }
