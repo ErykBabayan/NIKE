@@ -13,10 +13,10 @@
 
 		<title>Biuro Rachunkowe NIKE</title>
 	</head>
-	<body>
+	<body id="block-scrolling">
 		<header>
 			<div class="header">
-				<div class="logo">Logo</div>
+				<a href="index.html"><div class="logo"></div></a>
 				<div class="menu-button" onclick="openNav()">
 					<div class="menu-icon"></div>
 					<div class="menu-icon"></div>
@@ -57,6 +57,7 @@
 					document.getElementById("side-nav").style.width = "0";
 					setTimeout(function () {
 						document.getElementById("delay").style.display = "none";
+						document.getElementById("block-scrolling").style = "overflow:initial";
 					}, delayInMillisecondsOnClose);
 				}
 
@@ -64,6 +65,7 @@
 					document.getElementById("side-nav").style.width = "85%";
 					setTimeout(function () {
 						document.getElementById("delay").style.display = "initial";
+						document.getElementById("block-scrolling").style = "overflow:hidden";
 					}, delayInMillisecondsOnOpen);
 				}
 			</script>
@@ -72,18 +74,47 @@
 			<div id="main"></div>
 		</header>
 
-		<section class="pop-up-section">
-			<div class="close-button">&times;</div>
+		<section class="pop-up-section" style="display: none">
+			<div onclick="hide()" class="close-button">&times;</div>
 			<h1 class="pop-up-head">Dobry początek</h1>
 			<div class="pop-up-container">
 				<p class="pop-up-text">30% zniżki na 3 miesiące współpracy</p>
 				<img src="Images/icons/pop-up-img.png" alt="increase in income icon" class="pop-up-icon" />
 			</div>
-			<p class="pop-up-offer">Oferta przeznacona dla nowych klientów</p>
+			<p class="pop-up-offer">Oferta przeznaczona dla nowych klientów</p>
 			<div class="pop-up-buttons-container">
 				<button class="call-us-button">Zadzwoń</button>
-				<p class="close-text">Nie pokazuj więcej</p>
+				<p onclick="dontShow()" class="close-text">Nie pokazuj więcej</p>
 			</div>
+
+			<script>
+				// this script is handling local storage for pop-up advert
+				if (localStorage.getItem("popup") != "dontShow") {
+					$(".pop-up-section").delay(1500).fadeIn();
+					setTimeout(function () {
+						document.getElementById("block-scrolling").style = "overflow:hidden";
+					}, 1600);
+				}
+
+				function hide() {
+					$(".pop-up-section").fadeOut();
+					document.getElementById("block-scrolling").style = "overflow:initial";
+				}
+
+				function dontShow() {
+					$(".pop-up-section").fadeOut();
+					localStorage.setItem("popup", "dontShow");
+					document.getElementById("block-scrolling").style = "overflow:initial";
+				}
+			</script>
+			<!--$(".cookies-banner-section").delay(1000).fadeIn();
+					localStorage.setItem("cookieSeen", "shown");
+				}
+	
+				$(".cookies-button").click(function () {
+					$(".cookies-banner-section").fadeOut();
+				});
+	-->
 		</section>
 
 		<section class="invite-section">
@@ -224,9 +255,10 @@
 		</section>
 
 		<script>
+			// this script is handling local storage for cookies
 			if (localStorage.getItem("cookieSeen") != "shown") {
 				$(".cookies-banner-section").delay(1000).fadeIn();
-				localStorage.setItem("cookieSeen", "X");
+				localStorage.setItem("cookieSeen", "shown");
 			}
 
 			$(".cookies-button").click(function () {
@@ -235,15 +267,15 @@
 		</script>
 
 		<footer class="footer">
-			<div class="footer-icon-container up-icon-container">
+			<div onclick="location.href = '#top'" class="footer-icon-container up-icon-container">
 				<img src="Images/icons/go up icon.png" alt="up arrow icon" class="footer-icon up-icon" />
 				<p class="footer-text">Wróć</p>
 			</div>
-			<div class="footer-icon-container contact-icon-container">
+			<div onclick="location.href = 'contact.html'" class="footer-icon-container contact-icon-container">
 				<img src="Images/icons/contact icon.png" alt="contact icon" class="footer-icon contact-icon" />
-				<p class="footer-text">Kontakt</p>
+				<button class="footer-button">Kontakt</button>
 			</div>
-			<div class="footer-icon-container">
+			<div onclick="location.href = 'privacy.html'" class="footer-icon-container">
 				<img src="Images/icons/privacy-policy-icon-white.png" alt="privacy policy icon" class="footer-icon" />
 				<p class="footer-text">Prywatność</p>
 			</div>

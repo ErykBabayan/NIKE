@@ -20,11 +20,13 @@
 
 .pop-up-section {
 	position: fixed;
+	overflow: hidden;
 	background-color: #fff;
 	top: 50;
-	left: 15vw;
+	bottom: 1;
 	z-index: 15;
-	display: none;
+	margin: 0 5vw;
+	box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5);
 }
 
 .close-button {
@@ -40,6 +42,9 @@
 	margin-bottom: 3vh;
 	text-align: center;
 	font-size: 2em;
+}
+.pop-up-text {
+	font-size: 1.4em;
 }
 .pop-up-container {
 	display: flex;
@@ -62,6 +67,10 @@
 .close-text {
 	width: 100%;
 	text-align: center;
+	text-decoration: underline;
+	text-decoration-color: var(--nike-golden);
+	text-decoration-thickness: 2px;
+	padding: 10% 0;
 }
 
 /*POP-UP*/ /*POP-UP*/ /*POP-UP*/
@@ -416,6 +425,13 @@ section.animated-circles {
 	color: white;
 	background-color: var(--nike-light-black);
 }
+
+.startup-call-us-button:hover {
+	background-color: #ffc70f;
+}
+.startup-offer-button:hover {
+	--nike-light-black: #343d49;
+}
 /*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/
 
 /*REFFERAL-PROGRAM*/ /*REFFERAL-PROGRAM*/ /*REFFERAL-PROGRAM*/
@@ -476,7 +492,9 @@ section.animated-circles {
 	border: none;
 	border-radius: 5px;
 }
-
+.cookies-button:hover {
+	background-color: #ffc70f;
+}
 /*COOKIES*/ /*COOKIES*/ /*COOKIES*/
 
 /*FOOTER*/ /*FOOTER*/ /*FOOTER*/
@@ -493,6 +511,7 @@ section.animated-circles {
 	height: 50px;
 	display: block;
 	margin: 0 auto;
+	margin-bottom: 10px;
 }
 .footer-icon-container {
 	display: block;
@@ -503,9 +522,15 @@ section.animated-circles {
 	color: white;
 	text-align: center;
 }
+.footer-button {
+	background-color: var(--nike-golden);
+	border: 0px;
+	border-radius: 3px;
+	padding: 3px;
+}
 .up-icon-container,
 .contact-icon-container {
-	margin-left: 10vw;
+	margin-left: 11vw;
 }
 
 /*FOOTER*/ /*FOOTER*/ /*FOOTER*/
