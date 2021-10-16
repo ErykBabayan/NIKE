@@ -13,6 +13,7 @@
 	margin: 0;
 	text-underline-offset: 0.2em;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 /*POP-UP*/ /*POP-UP*/ /*POP-UP*/

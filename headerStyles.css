@@ -49,6 +49,7 @@ header {
 }
 
 /* The navigation menu links */
+.sidenav p,
 .sidenav a {
 	margin: 0px 0px 16px 0px;
 	text-align: left;
@@ -68,6 +69,7 @@ header {
 	left: 8%;
 }
 
+.sidenav p:hover,
 .sidenav a:hover {
 	color: var(--nike-golden);
 }

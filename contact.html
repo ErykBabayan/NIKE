@@ -26,25 +26,25 @@
 			<div id="side-nav" class="sidenav">
 				<div id="delay">
 					<a class="closebtn" onclick="closeNav()">&times;</a>
-					<div>
+					<div onclick="location.href='index.html'">
+						<img src="Images/icons/home page icon.png" alt="home icon" class="sidenav-icon" />
+						<p>Strona główna</p>
+					</div>
+					<div onclick="location.href='offer.html'">
 						<img src="Images/icons/offer icon.png" alt="offer icon" class="sidenav-icon" />
-						<a href="">Oferta</a>
+						<p>Oferta</p>
 					</div>
-					<div>
-						<img src="Images/icons/contact icon.png" alt="contact icon" class="sidenav-icon" />
-						<a href="">Kontakt</a>
-					</div>
-					<div>
+					<div onclick="closeNav();location.href='index.html#offer-on-start'">
 						<img src="Images/icons/start offer icon.png" alt="start offer icon" class="sidenav-icon" />
-						<a href="">Oferta na start</a>
+						<p>Oferta na start</p>
 					</div>
-					<div>
+					<div onclick="closeNav();location.href='index.html#offer-refferal'">
 						<img src="Images/icons/handshake affiliate icon.png" alt="affiliate program icon" class="sidenav-icon" />
-						<a href="">Program poleceń</a>
+						<p>Program poleceń</p>
 					</div>
-					<div>
+					<div onclick="location.href='privacy.html'">
 						<img src="Images/icons/privacy policy icon gold.png" alt="privacy policy icon" class="sidenav-icon" />
-						<a href="">Polityka prywatności</a>
+						<p>Polityka prywatności</p>
 					</div>
 				</div>
 			</div>
@@ -67,7 +67,11 @@
 					}, delayInMillisecondsOnOpen);
 				}
 			</script>
+
+			<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+			<div id="main"></div>
 		</header>
+
 		<section class="contact-section">
 			<div class="open-hours">
 				<div class="open-hours-header"><p>Godziny otwarcia</p></div>
