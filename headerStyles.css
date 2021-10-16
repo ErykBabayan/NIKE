@@ -142,6 +142,7 @@ header {
 .open-hours-header{
     margin-left: 40%;
     font-size: 2.5vh;
+
     
     color: var(--nike-golden)
 }
@@ -158,7 +159,69 @@ header {
 }
 .open-hours-img{
     
-    margin: -5.3rem 0 0 0.2vh;
+    margin: -5.3rem 0 0 1vh;
 
 
+}
+.telephone{
+    width: 90vw;
+    max-width: 367px;
+    height: 13vh;
+    max-height: 120px;
+    margin: 5vh auto;
+    
+    background: #181A20;
+    border-radius: 15px;
+}
+.telephone-header
+{
+    margin-left: 53%;
+    font-size: 2.5vh;
+    
+    color: var(--nike-golden)
+}
+.telephone-text
+{
+    margin-top: 10px;
+    margin-left: 10vh;
+    font-size: 2vh;
+    line-height: 25px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.telephone-img{
+
+    margin: -3.9rem 0 0 1vh;
+}
+.e-mail{
+    width: 90vw;
+    max-width: 367px;
+    height: 13vh;
+    max-height: 120px;
+    margin: 5vh auto;
+    
+    background: #181A20;
+    border-radius: 15px;
+}
+.e-mail-header
+{
+    margin-left: 53%;
+    font-size: 2.5vh;
+    
+    color: var(--nike-golden)
+}
+.e-mail-text
+{
+    margin-top: 10px;
+    margin-left: 10vh;
+    font-size: 2vh;
+    line-height: 25px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.e-mail-img{
+
+    margin: -3.9rem 0 0 1vh;
 }
