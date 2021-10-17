@@ -15,12 +15,80 @@
 	box-sizing: border-box;
 }
 
-/*CONTACT_SECTION*/ /*CONTACT_SECTION*/ /*CONTACT_SECTION*/
+/*CONTACT-FORM*/ /*CONTACT-FORM*/ /*CONTACT-FORM*/
+
 .contact-section {
-	height: auto;
-	min-height: 280px;
 	background-color: black;
-	padding: 1vh 1vh 1vh 1vh;
+}
+.contact-head {
+	color: white;
+	padding: 5% 0 5% 10%;
+}
+.form-input-container {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 8%;
+}
+.form-input,
+.form-textarea {
+	width: 80%;
+	max-width: 300px;
+	line-height: 35px;
+	color: white;
+	background-color: var(--nike-dark-blue);
+	border: 0px;
+	border-radius: 5px;
+	padding-left: 3%;
+}
+.form-textarea {
+	line-height: 0.8rem;
+	padding-top: 3%;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: white;
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: white;
+}
+.form-submit-button {
+	width: 80%;
+	background-color: var(--nike-golden);
+	padding: 14px 28px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 375px) {
+	.form-textarea,
+	.form-input {
+		max-width: 400px;
+		line-height: 50px;
+		font-size: 1rem;
+	}
+	.form-textarea {
+		line-height: 15px;
+	}
+}
+
+/*CONTACT-FORM*/ /*CONTACT-FORM*/ /*CONTACT-FORM*/
+
+/*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/
+.info-section {
+	background-color: black;
+	padding: 1vh;
 }
 .open-hours {
 	width: 90vw;
@@ -106,3 +174,5 @@
 .e-mail-img {
 	margin: -3.9rem 0 0 1vh;
 }
+
+/*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/
