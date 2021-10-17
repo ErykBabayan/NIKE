@@ -14,12 +14,11 @@
 	text-underline-offset: 0.2em;
 	box-sizing: border-box;
 }
-
-/*CONTACT-FORM*/ /*CONTACT-FORM*/ /*CONTACT-FORM*/
-
-.contact-section {
+body {
 	background-color: black;
 }
+/*CONTACT-FORM*/ /*CONTACT-FORM*/ /*CONTACT-FORM*/
+
 .contact-head {
 	color: white;
 	padding: 5% 0 5% 10%;
@@ -39,6 +38,7 @@
 	border: 0px;
 	border-radius: 5px;
 	padding-left: 3%;
+	font-size: 1rem;
 }
 .form-textarea {
 	line-height: 0.8rem;
@@ -87,7 +87,6 @@
 
 /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/
 .info-section {
-	background-color: black;
 	padding: 1vh;
 }
 .open-hours {
@@ -176,3 +175,38 @@
 }
 
 /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/
+
+.meet-here {
+	border-radius: 15px 15px 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #242f3e;
+}
+.meet-here-icon {
+	width: 75px;
+	margin: 2% 2% 2% 0%;
+}
+.meet-here-text {
+	color: white;
+	font-size: 1.2rem;
+}
+
+hr {
+	background-color: #f0b90b;
+	height: 1px;
+	border: none;
+}
+#map {
+	height: 40vh;
+	max-height: 400px;
+}
+
+@media screen and (min-width: 350px) {
+	.meet-here-icon {
+		margin: 2% 5% 2% 0%;
+	}
+	.meet-here-text {
+		font-size: 1.3rem;
+	}
+}

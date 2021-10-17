@@ -9,6 +9,10 @@
 		<link rel="icon" href="Images/Logo/Favicon.png" />
 		<link rel="stylesheet" href="https://use.typekit.net/xwb3qfr.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+		<script src="nightModeMap.js"></script>
+		<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfo0_aVdujxPZponK4xxbFIvAtkd5UzNI&callback=initMap&v=weekly" async></script>
 
 		<title>Biuro Rachunkowe NIKE</title>
 	</head>
@@ -121,6 +125,15 @@
 				<div class="e-mail-text"><p>kontakt@nike-biuro.pl</p></div>
 				<div class="e-mail-img"><img src="Images/icons/icons8-secured-letter-100.png" alt="" /></div>
 			</div>
+		</section>
+
+		<section class="map-section">
+			<div class="meet-here">
+				<img src="Images/icons/meet-here.png" alt="location pin icon" class="meet-here-icon" />
+				<p class="meet-here-text">Spotkajmy się tutaj !</p>
+			</div>
+			<hr />
+			<div id="map"></div>
 		</section>
 	</body>
 </html>
