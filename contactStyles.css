@@ -30,7 +30,7 @@ body {
 }
 .form-input,
 .form-textarea {
-	width: 80%;
+	width: 90%;
 	max-width: 300px;
 	line-height: 35px;
 	color: white;
@@ -61,7 +61,7 @@ body {
 	color: white;
 }
 .form-submit-button {
-	width: 80%;
+	width: 90%;
 	background-color: var(--nike-golden);
 	padding: 14px 28px;
 	font-size: 18px;
@@ -86,45 +86,42 @@ body {
 /*CONTACT-FORM*/ /*CONTACT-FORM*/ /*CONTACT-FORM*/
 
 /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/
+
 .info-section {
-	padding: 1vh;
-}
-.info-section{
-	height: auto;
-	min-height: 280px;
-	background-color: black;
-	padding: 1vh 1vh 1vh 1vh;
+	/* Troszkę tipów tu mam dla ciebie usuń komentarze jak je przeczytasz zeby nie zaśmiecać */
+	/*min-height: 280px; to nie jest potrzebne z racji, że ta sekcja rozciąga się tak wysoko jak dużo jest w niej obiektów
+	background-color: black; to też nie jest potrzebne z racji, że daliśmy kolor na całe body*/
+	display: flex; /*  display flex dajesz na rodzicu obiektów czyli w tym przypadku dajemy flex na całej sekcji*/
+	/* mozesz pokombinować sobie z jakimiś ustawieniami innymi */
+	flex-wrap: wrap; /* flex wrap daje nam to, że nasze obiekty się zwijają. Pamiętaj że teraz flex odnosi się do .open-hours itd ale juz nie do kontentu jaki jest w środku */
+	justify-content: center; /* to nam wyrównuje text do środka w płaszczyźnie  poziomej*/
 }
 .open-hours {
-	width: 90vw;
-	max-width: 367px;
-	height: 13vh;
+	display: flex; /*  tu mamy taką samą sytuację jak powyzej tylko ze flex odnosi się do obiektów wewnątrz prostokąta */
+	align-items: center; /* to nam wyrównuje elementy w płaszczyźnie pionowej*/
+	justify-content: center; /*  jak wyżej zobacz sobie, że wyrównuje nam to elementy na środek*/
+	/* te dwa elementy fajnie nam wyrównują wszystkie elementy w tym kontenerze bez marginów i zbędnych pierdół*/
+	width: 90%;
+	max-width: 350px;
+	height: 15vh;
 	max-height: 120px;
-	margin: 2vh auto;
-
-	background: #181a20;
+	background: var(--nike-dark-blue);
 	border-radius: 15px;
 }
-.open-hours-header {
-	margin-left: 40%;
-	font-size: 2.5vh;
 
+.open-hours-head {
 	color: var(--nike-golden);
 }
 .open-hours-text {
-	margin-top: 10px;
-	margin-left: 9vh;
-	font-size: 2vh;
-	line-height: 25px;
-	text-align: center;
-
 	color: #ffffff;
+	text-align: center;
 }
 .open-hours-img {
-	max-width: 22vw;
-	max-height:8vh;
-	margin: -35px 0 0 1vh;
+	width: 75px;
+	margin-right: 5%;
 }
+/* Zerknij sobie na różnicę w używaniu różnych stylów i i lości kodu. Niepotrzebne marginy line heighty itd itd*/
+/* latwo jest przekombinować mimo, że działa tak czy siak ale można to zrobić w prostrzy i ładniejszy sposób*/
 .telephone {
 	width: 90vw;
 	max-width: 367px;
@@ -152,7 +149,7 @@ body {
 }
 .telephone-img {
 	max-width: 22vw;
-	max-height:8vh;
+	max-height: 8vh;
 	margin: -28px 0 0 1.3vh;
 }
 .e-mail {
@@ -182,12 +179,19 @@ body {
 }
 .e-mail-img {
 	max-width: 22vw;
-	max-height:8vh;
+	max-height: 8vh;
 	margin: -1.5rem 0 0 1.4vh;
 }
 
+@media screen and (min-width: 350px) {
+	.open-hours-img {
+		margin-right: 10%; /*To nam zmienia tylko to ,że od 350 px ten margin bedzie wynosić 10% zamiast 5%*/
+	}
+}
 
 /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/
+
+/* MAP SECTION */ /* MAP SECTION */ /* MAP SECTION */
 
 .meet-here {
 	border-radius: 15px 15px 0 0;
