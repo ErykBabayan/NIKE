@@ -89,6 +89,12 @@ body {
 .info-section {
 	padding: 1vh;
 }
+.info-section{
+	height: auto;
+	min-height: 280px;
+	background-color: black;
+	padding: 1vh 1vh 1vh 1vh;
+}
 .open-hours {
 	width: 90vw;
 	max-width: 367px;
@@ -115,7 +121,9 @@ body {
 	color: #ffffff;
 }
 .open-hours-img {
-	margin: -5.3rem 0 0 1vh;
+	max-width: 22vw;
+	max-height:8vh;
+	margin: -35px 0 0 1vh;
 }
 .telephone {
 	width: 90vw;
@@ -128,22 +136,24 @@ body {
 	border-radius: 15px;
 }
 .telephone-header {
-	margin-left: 53%;
-	font-size: 2.5vh;
-
+	margin-left: 30%;
+	font-size: 25px;
+	text-align: center;
 	color: var(--nike-golden);
 }
 .telephone-text {
-	margin-top: 10px;
-	margin-left: 10vh;
-	font-size: 2vh;
-	line-height: 25px;
+	margin-top: 0px;
+	margin-left: 11vh;
+	font-size: 19px;
+	line-height: 40px;
 	text-align: center;
 
 	color: #ffffff;
 }
 .telephone-img {
-	margin: -3.9rem 0 0 1vh;
+	max-width: 22vw;
+	max-height:8vh;
+	margin: -28px 0 0 1.3vh;
 }
 .e-mail {
 	width: 90vw;
@@ -163,7 +173,7 @@ body {
 }
 .e-mail-text {
 	margin-top: 10px;
-	margin-left: 10vh;
+	margin-left: 12vh;
 	font-size: 2vh;
 	line-height: 25px;
 	text-align: center;
@@ -171,8 +181,11 @@ body {
 	color: #ffffff;
 }
 .e-mail-img {
-	margin: -3.9rem 0 0 1vh;
+	max-width: 22vw;
+	max-height:8vh;
+	margin: -1.5rem 0 0 1.4vh;
 }
+
 
 /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/
 
