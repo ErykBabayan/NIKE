@@ -40,7 +40,7 @@ body {
 	justify-content: center;
 	align-content: center;
 	width: 100%;
-	padding: 0 10% 10% 10%;
+	padding: 0 5% 5% 5%;
 }
 
 .free-valuation-text {
@@ -62,4 +62,71 @@ body {
 	border: none;
 	cursor: pointer;
 	margin-bottom: 5%;
+}
+
+.offer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.offer-head {
+	width: 100%;
+	text-align: center;
+	color: white;
+	padding: 30px;
+	font-size: 30px;
+}
+
+.offer-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 200px;
+	justify-content: center;
+}
+
+.offer-description-head {
+	padding: 5%;
+	color: white;
+}
+
+.offer-show-container {
+	background-color: var(--nike-light-black);
+	padding: 10px 5% 5% 5%;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 260px;
+	transition: 1s;
+	height: 300px;
+}
+
+.offer-show-button {
+	border: 0px;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: var(--nike-golden);
+	color: var(--nike-dark-blue);
+}
+.offer-show-button img {
+	width: 40px;
+	padding-top: 15%;
+}
+
+.offer-explanation-container {
+}
+.offer-explanation-text {
+	color: white;
+	text-align: center;
+	margin-top: 5%;
+	font-size: 1.1em;
+}
+
+.offer-explanation-cost {
+	color: var(--nike-golden);
+	text-align: center;
+	font-size: 1.4em;
+	margin: 5% 0;
 }
