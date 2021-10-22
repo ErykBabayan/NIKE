@@ -64,7 +64,7 @@ body {
 	margin-bottom: 5%;
 }
 
-.offer {
+.offer-section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -81,17 +81,18 @@ body {
 .offer-container {
 	display: flex;
 	flex-wrap: wrap;
-	width: 200px;
+	width: 250px;
 	justify-content: center;
+	padding: 10% 0;
 }
 
 .offer-description-head {
 	padding: 5%;
 	color: white;
+	text-align: center;
 }
 
 .offer-show-container {
-	background-color: var(--nike-light-black);
 	padding: 10px 5% 5% 5%;
 	border-radius: 15px;
 	display: flex;
@@ -99,7 +100,6 @@ body {
 	flex-wrap: wrap;
 	width: 260px;
 	transition: 1s;
-	height: 300px;
 }
 
 .offer-show-button {
@@ -109,6 +109,7 @@ body {
 	height: 50px;
 	background-color: var(--nike-golden);
 	color: var(--nike-dark-blue);
+	transition: 0.3s;
 }
 .offer-show-button img {
 	width: 40px;
@@ -116,7 +117,12 @@ body {
 }
 
 .offer-explanation-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	transition: 1s;
 }
+
 .offer-explanation-text {
 	color: white;
 	text-align: center;
@@ -129,4 +135,50 @@ body {
 	text-align: center;
 	font-size: 1.4em;
 	margin: 5% 0;
+	width: 100%;
+}
+.offer-explanation-button {
+	background-color: var(--nike-golden);
+	width: 35%;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 5%;
+}
+
+@keyframes rotate-button-open {
+	100% {
+		transform: rotate(180deg);
+	}
+}
+@keyframes rotate-button-close {
+	0% {
+		transform: rotate(180deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes hide {
+	from {
+		background-color: var(--nike-light-black);
+		height: 320px;
+		display: flex;
+	}
+
+	to {
+		height: 0px;
+	}
+}
+@keyframes show {
+	from {
+		height: 0px;
+	}
+	to {
+		background-color: var(--nike-light-black);
+		height: 320px;
+		display: flex;
+	}
 }

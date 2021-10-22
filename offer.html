@@ -9,7 +9,7 @@
 		<link rel="icon" href="Images/Logo/Favicon.png" />
 		<link rel="stylesheet" href="https://use.typekit.net/xwb3qfr.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+		<script src="scripts/toggle.js"></script>
 		<title>Biuro Rachunkowe NIKE</title>
 	</head>
 	<body id="block-scrolling">
@@ -82,19 +82,131 @@
 			<button class="call-us-button">Zadzwoń</button>
 		</section>
 
-		<section class="offer">
+		<section class="offer-section">
 			<h1 class="offer-head">Kompleksowe usługi</h1>
 
 			<div class="offer-container">
 				<img class="offer-img" src="Images/icons/new business.png" alt="icon of a company" />
 				<h2 class="offer-description-head">Zakładanie firmy</h2>
+
+				<div class="offer-show-container" id="wrap-new-business">
+					<button onclick="toggleNewBusiness()" class="offer-show-button" id="rotate-new-business">
+						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
+					</button>
+					<div class="offer-explanation-container" id="hide-new-business" style="display: none">
+						<p class="offer-explanation-text">Kompleksowa pomoc w przygotowaniu dokumentów zgłoszeniowych dla nowych przesiębiorców</p>
+						<p class="offer-explanation-cost">Bezpłatne</p>
+						<button class="offer-explanation-button">Dodaj</button>
+					</div>
+				</div>
 			</div>
-			<div class="offer-show-container">
-				<button onclick="hide()" class="offer-show-button"><img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" /></button>
-				<div class="offer-explanation-container" style="" id="hide">
-					<p class="offer-explanation-text">Kompleksowa pomoc w przygotowaniu dokumentów zgłoszeniowych dla nowych przesiębiorców</p>
-					<p class="offer-explanation-cost">Bezpłatne</p>
-					<button class="offer-explanation-button">Dodaj</button>
+
+			<div class="offer-container">
+				<img class="offer-img" src="Images/icons/hr-services.png" alt="hr services" />
+				<h2 class="offer-description-head">
+					Obsługa <br />
+					kadrowo - płacowa
+				</h2>
+				<div class="offer-show-container" id="wrap-hr-services">
+					<button onclick="toggleHrServices()" class="offer-show-button" id="rotate-hr-services">
+						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
+					</button>
+					<div class="offer-explanation-container" id="hide-hr-services" style="display: none">
+						<p class="offer-explanation-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellendus quam optio error, ipsa magni dolorum dolore! Ab, sint
+							quibusdam!
+						</p>
+						<p class="offer-explanation-cost">Od: 200zł</p>
+						<button class="offer-explanation-button">Dodaj</button>
+					</div>
+				</div>
+			</div>
+			<div class="offer-container">
+				<img class="offer-img" src="Images/icons/annual settelment.png" alt="annual settelment icon" />
+				<h2 class="offer-description-head">Rozliczenia roczne</h2>
+				<div class="offer-show-container" id="wrap-annual-settelment">
+					<button onclick="toggleAnnualSettelment()" class="offer-show-button" id="rotate-annual-settelment">
+						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
+					</button>
+					<div class="offer-explanation-container" id="hide-annual-settelment" style="display: none">
+						<p class="offer-explanation-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur deleniti
+							debitis.
+						</p>
+						<p class="offer-explanation-cost">Od: 500zł</p>
+						<button class="offer-explanation-button">Dodaj</button>
+					</div>
+				</div>
+			</div>
+			<div class="offer-container">
+				<img class="offer-img" src="Images/icons/bookkeeping.png" alt="bookkeeping icon" />
+				<h2 class="offer-description-head">
+					Prowadzenie <br />
+					ksiąg handlowych
+				</h2>
+				<div class="offer-show-container" id="wrap-bookkeeping">
+					<button onclick="toggleBookkeeping()" class="offer-show-button" id="rotate-bookkeeping">
+						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
+					</button>
+					<div class="offer-explanation-container" id="hide-bookkeeping" style="display: none">
+						<p class="offer-explanation-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur deleniti
+							debitis.
+						</p>
+						<p class="offer-explanation-cost">Od: 1000zł</p>
+						<button class="offer-explanation-button">Dodaj</button>
+					</div>
+				</div>
+			</div>
+			<div class="offer-container">
+				<img class="offer-img" src="Images/icons/revenue book.png" alt="revenue book icon" />
+				<h2 class="offer-description-head">Księgi przychodów i rozchodów</h2>
+				<div class="offer-show-container" id="wrap-revenue-book">
+					<button onclick="toggleRevenueBook()" class="offer-show-button" id="rotate-revenue-book">
+						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
+					</button>
+					<div class="offer-explanation-container" id="hide-revenue-book" style="display: none">
+						<p class="offer-explanation-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur deleniti
+							debitis.
+						</p>
+						<p class="offer-explanation-cost">Od: 800zł</p>
+						<button class="offer-explanation-button">Dodaj</button>
+					</div>
+				</div>
+			</div>
+			<div class="offer-container">
+				<img class="offer-img" src="Images/icons/Finacial report.png" alt=" finacial report icon" />
+				<h2 class="offer-description-head">Sprawozdania finansowe</h2>
+				<div class="offer-show-container" id="wrap-finacial-report">
+					<button onclick="toggleFinacialReport()" class="offer-show-button" id="rotate-finacial-report">
+						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
+					</button>
+					<div class="offer-explanation-container" id="hide-finacial-report" style="display: none">
+						<p class="offer-explanation-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur deleniti
+							debitis.
+						</p>
+						<p class="offer-explanation-cost">Od: 450zł</p>
+						<button class="offer-explanation-button">Dodaj</button>
+					</div>
+				</div>
+			</div>
+			<div class="offer-container">
+				<img class="offer-img" src="Images/icons/company success.png" alt="company success icon" />
+				<h2 class="offer-description-head">Sukces firmy</h2>
+				<div class="offer-show-container" id="wrap-company-success">
+					<button onclick="toggleCompanySuccess()" class="offer-show-button" id="rotate-company-success">
+						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
+					</button>
+					<div class="offer-explanation-container" id="hide-company-success" style="display: none">
+						<p class="offer-explanation-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur deleniti
+							debitis.
+						</p>
+						<p class="offer-explanation-cost">Bezcenne</p>
+						<button class="offer-explanation-button">Dodaj</button>
+					</div>
 				</div>
 			</div>
 		</section>
