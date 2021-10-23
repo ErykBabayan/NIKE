@@ -75,23 +75,29 @@ body {
 	text-align: center;
 	color: white;
 	padding: 30px;
-	font-size: 30px;
+	font-size: 40px;
+	text-decoration: underline;
+	text-decoration-color: var(--nike-golden);
 }
 
 .offer-container {
 	display: flex;
 	flex-wrap: wrap;
-	width: 250px;
+	width: 300px;
 	justify-content: center;
 	padding: 10% 0;
+	margin: 1rem;
 }
 
 .offer-description-head {
 	padding: 5%;
 	color: white;
 	text-align: center;
+	width: 100%;
 }
-
+.one-line-text {
+	margin: 17px 0;
+}
 .offer-show-container {
 	padding: 10px 5% 5% 5%;
 	border-radius: 15px;
