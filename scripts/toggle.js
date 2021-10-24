@@ -3,6 +3,11 @@
         //current deadline i can't spend more time on a proper solution
         // Gonna fix it later
        
+        //possible solution
+        // https://stackoverflow.com/questions/33444446/get-index-of-class-clicked-in-javascript-no-jquery
+
+
+
        let isOpenedNewBusiness = true;
        let isOpenedeHrServices = true;
        let isOpenedAnnualSettelment = true;
@@ -10,6 +15,7 @@
        let isOpenedRevenueBook = true;
        let isOpenedFinacialReport = true;
        let isOpenedCompanySuccess = true;
+       let isOpenedValuation = true;
 
 function toggleNewBusiness (){
         
@@ -37,7 +43,6 @@ function toggleNewBusiness (){
        
 
 }
-
 
 function toggleHrServices (){
         
@@ -170,7 +175,7 @@ function toggleFinacialReport (){
 }
 function toggleCompanySuccess (){
         
-    if(isOpenedCompanySuccess == true)
+   if(isOpenedCompanySuccess == true)
     {
         isOpenedCompanySuccess = false;
         setTimeout(() => {
@@ -191,4 +196,24 @@ function toggleCompanySuccess (){
     }
    
 
+}
+
+
+function toggleValuation() {
+
+
+    if(isOpenedValuation == true)
+    {
+        isOpenedValuation = false;
+        document.getElementById("valuation-list").style.display = "flex";
+    }
+    else if(isOpenedValuation == false)
+    {
+        isOpenedValuation = true;
+        document.getElementById("valuation-list").style.display = "none";
+    }
+
+
+
+    
 }

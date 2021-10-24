@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://use.typekit.net/xwb3qfr.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="scripts/toggle.js"></script>
+		<script src="scripts/valuation.js"></script>
 		<title>Biuro Rachunkowe NIKE</title>
 	</head>
 	<body id="block-scrolling">
@@ -96,7 +97,7 @@
 					<div class="offer-explanation-container" id="hide-new-business" style="display: none">
 						<p class="offer-explanation-text">Kompleksowa pomoc w przygotowaniu dokumentów zgłoszeniowych dla nowych przesiębiorców</p>
 						<p class="offer-explanation-cost">Bezpłatne</p>
-						<button class="offer-explanation-button">Dodaj</button>
+						<button onclick="AddValueNewBusiness()" class="offer-explanation-button">Dodaj</button>
 					</div>
 				</div>
 			</div>
@@ -116,7 +117,7 @@
 							quibusdam!
 						</p>
 						<p class="offer-explanation-cost">Od: 200zł</p>
-						<button class="offer-explanation-button">Dodaj</button>
+						<button onclick="AddValueHrServices()" class="offer-explanation-button">Dodaj</button>
 					</div>
 				</div>
 			</div>
@@ -133,7 +134,7 @@
 							debitis.
 						</p>
 						<p class="offer-explanation-cost">Od: 500zł</p>
-						<button class="offer-explanation-button">Dodaj</button>
+						<button onclick="AddValueAnnualSettelment()" class="offer-explanation-button">Dodaj</button>
 					</div>
 				</div>
 			</div>
@@ -153,7 +154,7 @@
 							debitis.
 						</p>
 						<p class="offer-explanation-cost">Od: 1000zł</p>
-						<button class="offer-explanation-button">Dodaj</button>
+						<button onclick="AddValueBookkeeping()" class="offer-explanation-button">Dodaj</button>
 					</div>
 				</div>
 			</div>
@@ -173,7 +174,7 @@
 							debitis.
 						</p>
 						<p class="offer-explanation-cost">Od: 800zł</p>
-						<button class="offer-explanation-button">Dodaj</button>
+						<button onclick="AddValueRevenueBook()" class="offer-explanation-button">Dodaj</button>
 					</div>
 				</div>
 			</div>
@@ -190,7 +191,7 @@
 							debitis.
 						</p>
 						<p class="offer-explanation-cost">Od: 450zł</p>
-						<button class="offer-explanation-button">Dodaj</button>
+						<button onclick="AddValueFinacialReport()" class="offer-explanation-button">Dodaj</button>
 					</div>
 				</div>
 			</div>
@@ -207,9 +208,86 @@
 							debitis.
 						</p>
 						<p class="offer-explanation-cost">Bezcenne</p>
-						<button class="offer-explanation-button">Dodaj</button>
+						<button onclick="AddValueCompanySuccess()" class="offer-explanation-button">Dodaj</button>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<section class="send-valuation-section">
+			<div class="valuation-text-container">
+				<h1 class="send-valuation-head">Lista wybranych usług:</h1>
+				<img onclick="toggleValuation()" src="Images/icons/valuation list.png" alt="valuation list icon" class="send-valuation-img" />
+
+				<div class="valuation-list-container" id="valuation-list" style="display: none">
+					<div class="valuation-list" id="valuation-new-business" style="display: none">
+						<img class="valuation-list-img" src="Images/icons/new business.png" alt="" />
+						<p class="valuation-list-text">Zakładanie firmy</p>
+						<p class="offer-explanation-cost">Bezpłatne</p>
+					</div>
+					<div class="valuation-list" id="valuation-hr-services" style="display: none">
+						<img class="valuation-list-img" src="Images/icons/hr-services.png" alt="" />
+						<p class="valuation-list-text">Obsługa kadrowo-płacowa</p>
+						<p class="offer-explanation-cost">Od: 200zł</p>
+					</div>
+					<div class="valuation-list" id="valuation-annual-settelment" style="display: none">
+						<img class="valuation-list-img" src="Images/icons/annual settelment.png" alt="" />
+						<p class="valuation-list-text">Rozliczenia roczne</p>
+						<p class="offer-explanation-cost">Od: 500zł</p>
+					</div>
+					<div class="valuation-list" id="valuation-bookkeeping" style="display: none">
+						<img class="valuation-list-img" src="Images/icons/bookkeeping.png" alt="" />
+						<p class="valuation-list-text">Prowadzenie ksiąg handlowych</p>
+						<p class="offer-explanation-cost">Od: 1000zł</p>
+					</div>
+					<div class="valuation-list" id="valuation-revenue-book" style="display: none">
+						<img class="valuation-list-img" src="Images/icons/revenue book.png" alt="" />
+						<p class="valuation-list-text">Księgi przychodów i rozchodów</p>
+						<p class="offer-explanation-cost">Od: 1000zł</p>
+					</div>
+					<div class="valuation-list" id="valuation-finacial-report" style="display: none">
+						<img class="valuation-list-img" src="Images/icons/Finacial report.png" alt="" />
+						<p class="valuation-list-text">Sprawozdanie finansowe</p>
+						<p class="offer-explanation-cost">Od: 450zł</p>
+					</div>
+					<div class="valuation-list" id="valuation-company-success">
+						<img class="valuation-list-img" src="Images/icons/company success.png" alt="" />
+						<p class="valuation-list-text">Sukces firmy</p>
+						<p class="offer-explanation-cost">Bezcenne</p>
+					</div>
+					<div class="valuation-list-text">Łączny koszt usług:</div>
+					<div id="valuation-cost" class="valuation-cost"></div>
+				</div>
+
+				<div class="valuation-text">Oferta wydaje się korzystna ? Wyślij do nas zgłoszenie z dodanymi usługami a odezwiemy się z gotową ofertą</div>
+			</div>
+
+			<div class="send-valuation-container">
+				<form target="_blank" action="https://formsubmit.co/erykbabayan@gmail.com" method="POST">
+					<div class="form-input-container">
+						<input class="form-input" type="text" name="Imię" placeholder="Imię" required />
+					</div>
+					<div class="form-input-container">
+						<input class="form-input" type="email" name="E-mail" placeholder="E-mail" required />
+					</div>
+					<div class="form-input-container">
+						<input class="form-input" type="number" name="Telefon" placeholder="Telefon (opcjonalne)" />
+					</div>
+
+					<div class="form-input-container">
+						<textarea
+							id="form-textarea"
+							class="form-textarea"
+							placeholder="Tutaj wpisz swoją wiadomość..."
+							name="Wiadomość"
+							rows="10"
+							required
+						></textarea>
+					</div>
+					<div class="form-input-container">
+						<button type="submit" class="form-submit-button">Wyślij zapytanie</button>
+					</div>
+				</form>
 			</div>
 		</section>
 	</body>

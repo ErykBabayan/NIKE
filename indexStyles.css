@@ -516,6 +516,7 @@ section.animated-circles {
 .footer-icon-container {
 	display: block;
 	margin: 0 auto;
+	cursor: pointer;
 }
 
 .footer-text {
