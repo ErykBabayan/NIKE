@@ -76,46 +76,44 @@
 /*POP-UP*/ /*POP-UP*/ /*POP-UP*/
 
 /*INVITE_SECTION*/ /*INVITE_SECTION*/ /*INVITE_SECTION*/
-.invite-section {
-	height: 35vh;
-	min-height: 280px;
+.background-color-wrapper {
 	background-color: black;
 }
-.invite-row {
-	content: "";
-	display: table;
-	clear: both;
-	width: 100%;
+
+.invite-section {
+	height: 50vh;
+	min-height: 200px;
+	max-height: 200px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.invite-column {
-	float: left;
+.invite-success-img {
 	width: 50%;
-}
-
-.invite-success-img img {
-	height: 90%;
-	width: 90%;
-	max-height: 160px;
-	margin-top: 1.5em;
+	max-height: 200px;
+	padding: 3%;
 }
 
 .invite-text {
-	width: 90%;
-	max-width: 300px;
-	padding: 1em 1em 0.1em 1.3em;
-	font-size: 0.95em;
+	font-size: 1em;
 	color: #ffffff;
+	width: 50%;
+	padding: 10px;
+	padding-left: 5%;
+}
+
+.button-wrapper {
+	margin-top: -13%;
+	padding-left: 5%;
 }
 
 .call-us-button {
 	width: 120px;
+	height: 40px;
 	background-color: var(--nike-golden);
-	padding: 14px 28px;
+	padding: 6px;
 	font-size: 16px;
-	line-height: 8px;
 	border-radius: 5px;
-	margin: 0.4em 0 0 1.5em;
 	border: none;
 	cursor: pointer;
 }
@@ -130,9 +128,16 @@
 	text-decoration: none;
 }
 
-@media screen and (min-width: 350px) {
-	.call-us-button {
-		margin-top: 1.5em;
+@media screen and (max-width: 370px) {
+	.invite-text {
+		font-size: 0.9em;
+		padding-right: 0;
+	}
+	.button-wrapper {
+		margin-top: -16%;
+	}
+	.invite-success-img {
+		padding-left: 0;
 	}
 }
 
@@ -144,7 +149,6 @@
 	border-radius: 30px 30px 0px 0px;
 	background: white;
 	width: 100%;
-	margin-top: -75px;
 	height: 400px;
 }
 

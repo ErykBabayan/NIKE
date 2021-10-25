@@ -89,6 +89,7 @@
 
 			<script>
 				// this script is handling local storage for pop-up advert
+
 				if (localStorage.getItem("popup") != "dontShow") {
 					$(".pop-up-section").delay(1500).fadeIn();
 					setTimeout(function () {
@@ -109,36 +110,40 @@
 			</script>
 		</section>
 
-		<section class="invite-section">
-			<div class="invite-row">
-				<div class="invite-column">
-					<p class="invite-text">Daj możliwość rozwoju swojej firmie <br /><br />My zajmujemy się tym na co Ty tracisz czas</p>
+		<div class="background-color-wrapper">
+			<section class="invite-section">
+				<p class="invite-text">
+					Daj możliwość rozwoju swojej firmie <br />
+					<br />
+					My zajmujemy się tym na co Ty tracisz czas
+				</p>
+
+				<img class="invite-success-img" src="Images/icons/invite succes img.png" alt="your success with us" />
+				<div class="button-wrapper">
 					<button class="call-us-button"><a href="tel:01234567890">Zadzwoń</a></button>
 				</div>
-				<div class="invite-column">
-					<div class="invite-success-img">
-						<img src="Images/icons/invite succes img.png" alt="your success with us" />
+			</section>
+
+			<section class="about_us-section">
+				<h1 class="about_us-head">Nieco o nas</h1>
+				<p class="about_us-text">
+					Jesteśmy biurem rachunkowym pracującym z pasją dla ludzi. Od 2012 roku pomagamy rozwijać działalności innych
+				</p>
+				<h2 class="about_us-head_2">Jesteśmy profesjonalistami</h2>
+				<div class="about_us-row">
+					<div class="about_us-column">
+						<h3 class="about_us-text_2">
+							Nasze biuro wzięło udział w plebiscycie Orły Rachunkowości, w którym zdobyliśmy wyróżnienie jako laureat konkursu
+						</h3>
+					</div>
+					<div class="about_us-column">
+						<div class="competition-image">
+							<img src="Images/photos/RACHUNKOWOŚCI LOGO 2020 400.png" alt="" />
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="about_us-section">
-			<h1 class="about_us-head">Nieco o nas</h1>
-			<p class="about_us-text">Jesteśmy biurem rachunkowym pracującym z pasją dla ludzi. Od 2012 roku pomagamy rozwijać działalności innych</p>
-			<h2 class="about_us-head_2">Jesteśmy profesjonalistami</h2>
-			<div class="about_us-row">
-				<div class="about_us-column">
-					<h3 class="about_us-text_2">
-						Nasze biuro wzięło udział w plebiscycie Orły Rachunkowości, w którym zdobyliśmy wyróżnienie jako laureat konkursu
-					</h3>
-				</div>
-				<div class="about_us-column">
-					<div class="competition-image">
-						<img src="Images/photos/RACHUNKOWOŚCI LOGO 2020 400.png" alt="" />
-					</div>
-				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 
 		<div class="circles-head">
 			<strong>Liczby</strong>
@@ -195,8 +200,8 @@
 			</div>
 			<h2 class="startup-head">Wierzmy w nowe firmy!</h2>
 			<h3 class="startup-text">
-				Wiemy jakie trudności sprawia prowadzenie prężnie działającej firmy. Wielokrotnie byliśmy przy “narodzinach” nowego biznesu i chcemy mieć
-				realny wpływ na <strong>twój start</strong>
+				Wiemy jakie trudności sprawia prowadzenie prężnie działającej firmy. Wielokrotnie byliśmy przy “narodzinach” nowego biznesu i chcemy
+				mieć realny wpływ na <strong>twój start</strong>
 			</h3>
 			<h2 class="startup-head">Co od nas zyskasz ?</h2>
 
@@ -238,8 +243,8 @@
 			<div class="cookies-banner">
 				<img src="Images/icons/cookies.png" alt="cookies icon" class="cookie-icon" />
 				<p class="cookies-text">
-					Na naszej stronie stosujemy pliki cookies. Korzystanie bez zmiany ustawień przeglądarki oznacza, że pliki cookies będą zamieszczane na Twoim
-					urządzeniu. <a href="privacy.html">Prywatność</a>
+					Na naszej stronie stosujemy pliki cookies. Korzystanie bez zmiany ustawień przeglądarki oznacza, że pliki cookies będą
+					zamieszczane na Twoim urządzeniu. <a href="privacy.html">Prywatność</a>
 				</p>
 
 				<button class="cookies-button">Akceptuję</button>
