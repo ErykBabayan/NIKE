@@ -1,4 +1,3 @@
-
 let valuationPrice = 0;
 
 let isAddedNewBusiness = false;
@@ -11,145 +10,179 @@ let isAddedCompanySuccess = false;
 
 let valuationText;
 let pickedOffers;
+let hiddenInputInsert;
 
+function AddValueNewBusiness() {
+	valuationText = document.getElementById("valuation-cost");
+	hiddenInputInsert = document.getElementById("hidden-input-valuation");
 
-function AddValueNewBusiness(){
-     valuationText = document.getElementById("valuation-cost");
-     pickedOffers = document.getElementById("form-textarea");
+	if (isAddedNewBusiness == false) {
+		isAddedNewBusiness = true;
+		valuationPrice += 0;
 
-    if(isAddedNewBusiness == false)
-    {
-        isAddedNewBusiness = true;
-        valuationPrice+=0;
-        valuationText.textContent = "od " + valuationPrice +"zł";
-        document.getElementById("valuation-new-business").style.display = "flex";
-        
-    }
-    else if (isAddedNewBusiness == true){
-        isAddedNewBusiness = false;
-        valuationPrice-=0;
-        valuationText.textContent = "od " + valuationPrice +"zł";
-        document.getElementById("valuation-new-business").style.display = "none";
-    }
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-new-business").style.display = "flex";
+		hiddenInputInsert.value += " |Zakładanie firmy ";
 
+		//console.log(hiddenInputInsert.value);
+	} else if (isAddedNewBusiness == true) {
+		isAddedNewBusiness = false;
+		valuationPrice -= 0;
+
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-new-business").style.display = "none";
+		hiddenInputInsert.value += " Bez zakładania firmy| ";
+
+		//console.log(hiddenInputInsert.value);
+	}
 }
 
-function AddValueHrServices(){
-    valuationText = document.getElementById("valuation-cost");
+function AddValueHrServices() {
+	valuationText = document.getElementById("valuation-cost");
+	hiddenInputInsert = document.getElementById("hidden-input-valuation");
 
-   if(isAddedeHrServices == false)
-   {
-    isAddedeHrServices = true;
-       valuationPrice+=200;
-       valuationText.textContent = "od " + valuationPrice +"zł";
-       document.getElementById("valuation-hr-services").style.display = "flex";
-       
-   }
-   else if (isAddedeHrServices == true){
-       isAddedeHrServices = false;
-       valuationPrice-=200;
-       valuationText.textContent = "od " + valuationPrice +"zł";
-       document.getElementById("valuation-hr-services").style.display = "none";
-   }
+	if (isAddedeHrServices == false) {
+		isAddedeHrServices = true;
+		valuationPrice += 200;
 
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-hr-services").style.display = "flex";
+		hiddenInputInsert.value += " |Obsługa kadrowo-płacowa ";
+
+		//console.log(hiddenInputInsert.value);
+	} else if (isAddedeHrServices == true) {
+		isAddedeHrServices = false;
+		valuationPrice -= 200;
+
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-hr-services").style.display = "none";
+		hiddenInputInsert.value += " Bez obsługi kadrowo-płacowej| ";
+
+		//console.log(hiddenInputInsert.value);
+	}
 }
 
-function AddValueAnnualSettelment(){
-    valuationText = document.getElementById("valuation-cost");
+function AddValueAnnualSettelment() {
+	valuationText = document.getElementById("valuation-cost");
+	hiddenInputInsert = document.getElementById("hidden-input-valuation");
 
-   if(isAddedAnnualSettelment == false)
-   {
-    isAddedAnnualSettelment = true;
-        valuationPrice+=500;
-        valuationText.textContent = "od " + valuationPrice +"zł";
-        document.getElementById("valuation-annual-settelment").style.display = "flex";
-       
-   }
-   else if (isAddedAnnualSettelment == true){
-        isAddedAnnualSettelment = false;
-        valuationPrice-=500;
-        valuationText.textContent = "od " + valuationPrice +"zł";
-        document.getElementById("valuation-annual-settelment").style.display = "none";
-   }
+	if (isAddedAnnualSettelment == false) {
+		isAddedAnnualSettelment = true;
+		valuationPrice += 500;
 
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-annual-settelment").style.display = "flex";
+		hiddenInputInsert.value += " |Rozliczenie roczne ";
+
+		//console.log(hiddenInputInsert.value);
+	} else if (isAddedAnnualSettelment == true) {
+		isAddedAnnualSettelment = false;
+		valuationPrice -= 500;
+
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-annual-settelment").style.display = "none";
+		hiddenInputInsert.value += " Bez rozliczenia rocznego| ";
+
+		//console.log(hiddenInputInsert.value);
+	}
 }
 
-function AddValueBookkeeping(){
-    valuationText = document.getElementById("valuation-cost");
+function AddValueBookkeeping() {
+	valuationText = document.getElementById("valuation-cost");
+	hiddenInputInsert = document.getElementById("hidden-input-valuation");
 
-   if(isAddedBookkeeping == false)
-   {
-    isAddedBookkeeping = true;
-        valuationPrice+=1000;
-        valuationText.textContent = "od " + valuationPrice +"zł";
-        document.getElementById("valuation-bookkeeping").style.display = "flex";
-       
-   }
-   else if (isAddedBookkeeping == true){
-    isAddedBookkeeping = false;
-        valuationPrice-=1000;
-        valuationText.textContent = "od " + valuationPrice +"zł";
-        document.getElementById("valuation-bookkeeping").style.display = "none";
-   }
+	if (isAddedBookkeeping == false) {
+		isAddedBookkeeping = true;
+		valuationPrice += 1000;
 
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-bookkeeping").style.display = "flex";
+		hiddenInputInsert.value += " |Prowadzenie ksiąg handlowych ";
+
+		//console.log(hiddenInputInsert.value);
+	} else if (isAddedBookkeeping == true) {
+		isAddedBookkeeping = false;
+		valuationPrice -= 1000;
+
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-bookkeeping").style.display = "none";
+		hiddenInputInsert.value += " Bez prowadzenia ksiąg handlowych| ";
+
+		//console.log(hiddenInputInsert.value);
+	}
 }
 
-function AddValueRevenueBook(){
-    valuationText = document.getElementById("valuation-cost");
+function AddValueRevenueBook() {
+	valuationText = document.getElementById("valuation-cost");
+	hiddenInputInsert = document.getElementById("hidden-input-valuation");
 
-   if(isAddedRevenueBook == false)
-   {
-    isAddedRevenueBook = true;
-        valuationPrice+=800;
-        valuationText.textContent = "od " + valuationPrice +"zł";
-        document.getElementById("valuation-revenue-book").style.display = "flex";
-       
-   }
-   else if (isAddedRevenueBook == true){
-    isAddedRevenueBook = false;
-        valuationPrice-=800;
-        valuationText.textContent = "od " + valuationPrice +"zł";
-        document.getElementById("valuation-revenue-book").style.display = "none";
-   }
+	if (isAddedRevenueBook == false) {
+		isAddedRevenueBook = true;
+		valuationPrice += 800;
 
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-revenue-book").style.display = "flex";
+		hiddenInputInsert.value += " |Księgi przychodów i rozchodów ";
+
+		//console.log(hiddenInputInsert.value);
+	} else if (isAddedRevenueBook == true) {
+		isAddedRevenueBook = false;
+		valuationPrice -= 800;
+
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-revenue-book").style.display = "none";
+		hiddenInputInsert.value += " Bez ksiąg przychodów i rozchodów| ";
+
+		//console.log(hiddenInputInsert.value);
+	}
 }
 
-function AddValueFinacialReport(){
-    valuationText = document.getElementById("valuation-cost");
+function AddValueFinacialReport() {
+	valuationText = document.getElementById("valuation-cost");
+	hiddenInputInsert = document.getElementById("hidden-input-valuation");
 
-   if(isAddedFinacialReport == false)
-   {
-    isAddedFinacialReport = true;
-        valuationPrice+=450;
-        valuationText.textContent = "od " + valuationPrice +"zł";
-        document.getElementById("valuation-finacial-report").style.display = "flex";
-       
-   }
-   else if (isAddedFinacialReport == true){
-    isAddedFinacialReport = false;
-        valuationPrice-=450;
-        valuationText.textContent = "od " + valuationPrice +"zł";
-        document.getElementById("valuation-finacial-report").style.display = "none";
-   }
+	if (isAddedFinacialReport == false) {
+		isAddedFinacialReport = true;
+		valuationPrice += 450;
 
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-finacial-report").style.display = "flex";
+		hiddenInputInsert.value += " |Sprawozdanie finansowe ";
+
+		//console.log(hiddenInputInsert.value);
+	} else if (isAddedFinacialReport == true) {
+		isAddedFinacialReport = false;
+		valuationPrice -= 450;
+
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-finacial-report").style.display = "none";
+		hiddenInputInsert.value += " Bez sprawozdania finansowego| ";
+
+		//console.log(hiddenInputInsert.value);
+	}
 }
 
-function AddValueCompanySuccess(){
-    valuationText = document.getElementById("valuation-cost");
+function AddValueCompanySuccess() {
+	valuationText = document.getElementById("valuation-cost");
+	hiddenInputInsert = document.getElementById("hidden-input-valuation");
 
-   if(isAddedCompanySuccess == false)
-   {
-    isAddedCompanySuccess = true;
-        valuationPrice+=0;
-        valuationText.textContent = "od " + valuationPrice +"zł";
-        document.getElementById("valuation-company-success").style.display = "flex";
-       
-   }
-   else if (isAddedCompanySuccess == true){
-    isAddedCompanySuccess = false;
-        valuationPrice-=0;
-        valuationText.textContent = "od " + valuationPrice +"zł";
-        document.getElementById("valuation-company-success").style.display = "none";
-   }
+	if (isAddedCompanySuccess == false) {
+		isAddedCompanySuccess = true;
+		valuationPrice += 0;
 
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-company-success").style.display = "flex";
+		hiddenInputInsert.value += " |Sukces firmy ";
+
+		//console.log(hiddenInputInsert.value);
+	} else if (isAddedCompanySuccess == true) {
+		isAddedCompanySuccess = false;
+		valuationPrice -= 0;
+
+		valuationText.textContent = "od " + valuationPrice + "zł";
+		document.getElementById("valuation-company-success").style.display = "none";
+		hiddenInputInsert.value += " Bez sukcesu firmy| ";
+
+		//console.log(hiddenInputInsert.value);
+	}
 }
