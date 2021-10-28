@@ -168,7 +168,6 @@ button:active {
 .about-us-text {
 	padding: 0 5vw;
 	font-size: 18px;
-
 	text-align: center;
 }
 
@@ -176,9 +175,9 @@ button:active {
 	text-decoration: underline;
 	text-decoration-color: var(--nike-golden);
 	padding-top: 3vh;
-	margin-bottom: 3vh;
+	margin-bottom: 5vh;
 	text-align: center;
-	font-size: 2em;
+	font-size: clamp(1rem, 7vw, 2.2rem);
 }
 
 .competition-text {
@@ -385,6 +384,7 @@ section.animated-circles {
 	width: 50%;
 	max-width: 25%;
 }
+
 .startup-rectangle-text {
 	text-align: center;
 	padding: 2% 5% 0 5%;
@@ -398,6 +398,9 @@ section.animated-circles {
 	width: 80%;
 	display: flex;
 	justify-content: center;
+}
+.startup-cut-icon {
+	padding-top: 3px;
 }
 
 .startup-call-us-button a:visited,
@@ -502,38 +505,3 @@ section.animated-circles {
 	background-color: #ffc70f;
 }
 /*COOKIES*/ /*COOKIES*/ /*COOKIES*/
-
-/*FOOTER*/ /*FOOTER*/ /*FOOTER*/
-
-.footer {
-	background-color: var(--nike-dark-blue);
-	display: flex;
-	margin: auto;
-	margin-top: 5vh;
-	padding: 5vw 0;
-}
-.footer-icon {
-	width: 50px;
-	height: 50px;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 10px;
-}
-.footer-icon-container {
-	display: block;
-	margin: 0 auto;
-	cursor: pointer;
-}
-
-.footer-text {
-	color: white;
-	text-align: center;
-}
-.footer-button {
-	background-color: var(--nike-golden);
-	border: 0px;
-	border-radius: 3px;
-	padding: 3px;
-}
-
-/*FOOTER*/ /*FOOTER*/ /*FOOTER*/

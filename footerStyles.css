@@ -1,0 +1,54 @@
+@import url("https://use.typekit.net/xwb3qfr.css");
+:root {
+	--nike-light-black: #2b3139;
+	--nike-dark-blue: #181a20;
+	--nike-golden: #f0b90b;
+	--nike-golden-hover: #ffca1c;
+	--nike-golden-active: #ddab08;
+}
+* {
+	scroll-behavior: smooth;
+}
+
+/*FOOTER*/ /*FOOTER*/ /*FOOTER*/
+
+.footer {
+	background-color: var(--nike-dark-blue);
+	display: flex;
+	margin: auto;
+	margin-top: 5vh;
+	padding: 5vw 0;
+}
+
+.contact-page {
+	margin-top: 0px;
+}
+.offer-page {
+	background-color: var(--nike-light-black);
+}
+.footer-icon {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.footer-icon-container {
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.footer-text {
+	color: white;
+	text-align: center;
+}
+.footer-button {
+	background-color: var(--nike-golden);
+	border: 0px;
+	border-radius: 3px;
+	padding: 3px;
+	width: 65px;
+}
+
+/*FOOTER*/ /*FOOTER*/ /*FOOTER*/

@@ -3,6 +3,8 @@
 	--nike-light-black: #2b3139;
 	--nike-dark-blue: #181a20;
 	--nike-golden: #f0b90b;
+	--nike-golden-hover: #ffca1c;
+	--nike-golden-active: #ddab08;
 }
 
 * {
@@ -26,7 +28,7 @@ body {
 .form-input-container {
 	display: flex;
 	justify-content: center;
-	padding-bottom: 8%;
+	padding-bottom: 25px;
 }
 .form-input,
 .form-textarea {

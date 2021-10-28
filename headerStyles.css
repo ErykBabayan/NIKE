@@ -1,3 +1,12 @@
+@import url("https://use.typekit.net/xwb3qfr.css");
+:root {
+	--nike-light-black: #2b3139;
+	--nike-dark-blue: #181a20;
+	--nike-golden: #f0b90b;
+	--nike-golden-hover: #ffca1c;
+	--nike-golden-active: #ddab08;
+}
+
 /* HEADER */ /* HEADER */ /* HEADER */
 header {
 	background-color: var(--nike-dark-blue);
@@ -103,6 +112,18 @@ header {
 		width: 80%;
 	}
 	.menu-button {
-		margin: -65px 3% 0 0;
+		margin: -65px 4% 0 0;
+	}
+}
+
+@media screen and (min-width: 475px) {
+	.menu-button {
+		margin: -70px 10vw 0 0;
+
+		width: 60px;
+	}
+	.menu-icon {
+		height: 5px;
+		margin: 10px 0 0 0;
 	}
 }

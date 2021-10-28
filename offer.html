@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="offerStyles.css" />
 		<link rel="icon" href="Images/Logo/Favicon.png" />
 		<link rel="stylesheet" href="https://use.typekit.net/xwb3qfr.css" />
+		<link rel="stylesheet" href="footerStyles.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="scripts/toggle.js"></script>
 		<script src="scripts/valuation.js"></script>
@@ -113,8 +114,8 @@
 					</button>
 					<div class="offer-explanation-container" id="hide-hr-services" style="display: none">
 						<p class="offer-explanation-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellendus quam optio error, ipsa magni dolorum dolore! Ab, sint
-							quibusdam!
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellendus quam optio error, ipsa magni dolorum
+							dolore! Ab, sint quibusdam!
 						</p>
 						<p class="offer-explanation-cost">Od: 200zł</p>
 						<button onclick="AddValueHrServices()" class="offer-explanation-button">Dodaj</button>
@@ -130,8 +131,8 @@
 					</button>
 					<div class="offer-explanation-container" id="hide-annual-settelment" style="display: none">
 						<p class="offer-explanation-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur deleniti
-							debitis.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur
+							deleniti debitis.
 						</p>
 						<p class="offer-explanation-cost">Od: 500zł</p>
 						<button onclick="AddValueAnnualSettelment()" class="offer-explanation-button">Dodaj</button>
@@ -150,8 +151,8 @@
 					</button>
 					<div class="offer-explanation-container" id="hide-bookkeeping" style="display: none">
 						<p class="offer-explanation-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur deleniti
-							debitis.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur
+							deleniti debitis.
 						</p>
 						<p class="offer-explanation-cost">Od: 1000zł</p>
 						<button onclick="AddValueBookkeeping()" class="offer-explanation-button">Dodaj</button>
@@ -170,8 +171,8 @@
 					</button>
 					<div class="offer-explanation-container" id="hide-revenue-book" style="display: none">
 						<p class="offer-explanation-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur deleniti
-							debitis.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur
+							deleniti debitis.
 						</p>
 						<p class="offer-explanation-cost">Od: 800zł</p>
 						<button onclick="AddValueRevenueBook()" class="offer-explanation-button">Dodaj</button>
@@ -187,8 +188,8 @@
 					</button>
 					<div class="offer-explanation-container" id="hide-finacial-report" style="display: none">
 						<p class="offer-explanation-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur deleniti
-							debitis.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur
+							deleniti debitis.
 						</p>
 						<p class="offer-explanation-cost">Od: 450zł</p>
 						<button onclick="AddValueFinacialReport()" class="offer-explanation-button">Dodaj</button>
@@ -204,8 +205,8 @@
 					</button>
 					<div class="offer-explanation-container" id="hide-company-success" style="display: none">
 						<p class="offer-explanation-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur deleniti
-							debitis.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur
+							deleniti debitis.
 						</p>
 						<p class="offer-explanation-cost">Bezcenne</p>
 						<button onclick="AddValueCompanySuccess()" class="offer-explanation-button">Dodaj</button>
@@ -259,7 +260,9 @@
 					<div id="valuation-cost" class="valuation-cost"></div>
 				</div>
 
-				<div class="valuation-text">Oferta wydaje się korzystna ? Wyślij do nas zgłoszenie z dodanymi usługami a odezwiemy się z gotową ofertą</div>
+				<div class="valuation-text">
+					Oferta wydaje się korzystna ? Wyślij do nas zgłoszenie z dodanymi usługami a odezwiemy się z gotową ofertą
+				</div>
 			</div>
 
 			<div class="send-valuation-container">
@@ -284,13 +287,36 @@
 							rows="10"
 							required
 						></textarea>
-						<input id="hidden-input-valuation" class="form-input" type="text" value="" name="hidden" placeholder="hidden" style="display: none" />
+						<input
+							id="hidden-input-valuation"
+							class="form-input"
+							type="text"
+							value=""
+							name="hidden"
+							placeholder="hidden"
+							style="display: none"
+						/>
 					</div>
 					<div class="form-input-container">
 						<button type="submit" class="form-submit-button">Wyślij zapytanie</button>
 					</div>
 				</form>
 			</div>
+
+			<footer class="footer offer-page">
+				<div onclick="location.href = '#top'" class="footer-icon-container up-icon-container">
+					<img src="Images/icons/go up icon.png" alt="up arrow icon" class="footer-icon up-icon" />
+					<p class="footer-text">Wróć</p>
+				</div>
+				<div onclick="location.href = 'contact.html'" class="footer-icon-container">
+					<img src="Images/icons/contact icon.png" alt="offer icon" class="footer-icon" />
+					<button class="footer-button">Kontakt</button>
+				</div>
+				<div onclick="location.href = 'index.html'" class="footer-icon-container">
+					<img src="Images/icons/home page icon white.png" alt="offer icon" class="footer-icon" />
+					<p class="footer-text">Główna</p>
+				</div>
+			</footer>
 		</section>
 	</body>
 </html>
