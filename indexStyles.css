@@ -3,6 +3,8 @@
 	--nike-light-black: #2b3139;
 	--nike-dark-blue: #181a20;
 	--nike-golden: #f0b90b;
+	--nike-golden-hover: #ffca1c;
+	--nike-golden-active: #ddab08;
 }
 
 * {
@@ -14,6 +16,13 @@
 	text-underline-offset: 0.2em;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+}
+
+button:hover {
+	background-color: var(--nike-golden-hover);
+}
+button:active {
+	background-color: var(--nike-golden-active);
 }
 
 /*POP-UP*/ /*POP-UP*/ /*POP-UP*/
@@ -109,7 +118,7 @@
 
 .call-us-button {
 	width: 120px;
-	height: 40px;
+	height: 35px;
 	background-color: var(--nike-golden);
 	padding: 6px;
 	font-size: 16px;
@@ -202,7 +211,7 @@
 .circles-head {
 	text-align: center;
 	margin-top: 5vh;
-	font-size: 24px;
+	font-size: clamp(0.5rem, 7vw, 2.5rem);
 	text-decoration: underline;
 	text-decoration-color: var(--nike-golden);
 }
@@ -329,13 +338,8 @@ section.animated-circles {
 
 /*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/
 
-.startup-img {
-	width: 50%;
-	height: 50%;
-	margin-top: 0vh;
-}
 .startup-bussineses-img {
-	width: 100vw;
+	width: 100%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -346,6 +350,7 @@ section.animated-circles {
 	text-align: center;
 	text-decoration-color: var(--nike-golden);
 	margin: 5vh 0 5vh 0;
+	font-size: clamp(0.5rem, 7vw, 2.5rem);
 }
 .startup-text {
 	margin-left: auto;
@@ -376,7 +381,7 @@ section.animated-circles {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 1%;
+	padding-top: 3%;
 	width: 50%;
 	max-width: 25%;
 }
@@ -431,7 +436,7 @@ section.animated-circles {
 	background-color: #ffc70f;
 }
 .startup-offer-button:hover {
-	--nike-light-black: #343d49;
+	background-color: #343d49;
 }
 /*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/
 
@@ -529,10 +534,6 @@ section.animated-circles {
 	border: 0px;
 	border-radius: 3px;
 	padding: 3px;
-}
-.up-icon-container,
-.contact-icon-container {
-	margin-left: 11vw;
 }
 
 /*FOOTER*/ /*FOOTER*/ /*FOOTER*/
