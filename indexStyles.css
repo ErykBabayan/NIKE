@@ -380,17 +380,23 @@ section.animated-circles {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 3%;
 	width: 50%;
 	max-width: 25%;
+}
+.startup-icon {
+	padding-top: 3%;
+}
+
+#middle-icon {
+	padding-top: 0px;
+}
+.middle-text {
+	padding-top: 0px;
 }
 
 .startup-rectangle-text {
 	text-align: center;
 	padding: 2% 5% 0 5%;
-}
-.middle-text {
-	padding: 0%;
 }
 
 .startup-button-container {
@@ -398,9 +404,6 @@ section.animated-circles {
 	width: 80%;
 	display: flex;
 	justify-content: center;
-}
-.startup-cut-icon {
-	padding-top: 3px;
 }
 
 .startup-call-us-button a:visited,
