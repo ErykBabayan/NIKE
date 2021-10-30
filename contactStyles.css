@@ -91,104 +91,66 @@ body {
 /*INFO SECTION*/ /*INFO SECTION*/ /*INFO SECTION*/
 
 .info-section {
-	/* Troszkę tipów tu mam dla ciebie usuń komentarze jak je przeczytasz zeby nie zaśmiecać */
-	/*min-height: 280px; to nie jest potrzebne z racji, że ta sekcja rozciąga się tak wysoko jak dużo jest w niej obiektów
-	background-color: black; to też nie jest potrzebne z racji, że daliśmy kolor na całe body*/
-	display: flex; /*  display flex dajesz na rodzicu obiektów czyli w tym przypadku dajemy flex na całej sekcji*/
-	/* mozesz pokombinować sobie z jakimiś ustawieniami innymi */
-	flex-wrap: wrap; /* flex wrap daje nam to, że nasze obiekty się zwijają. Pamiętaj że teraz flex odnosi się do .open-hours itd ale juz nie do kontentu jaki jest w środku */
-	justify-content: center; /* to nam wyrównuje text do środka w płaszczyźnie  poziomej*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
-.open-hours {
-	display: flex; /*  tu mamy taką samą sytuację jak powyzej tylko ze flex odnosi się do obiektów wewnątrz prostokąta */
-	align-items: center; /* to nam wyrównuje elementy w płaszczyźnie pionowej*/
-	justify-content: center; /*  jak wyżej zobacz sobie, że wyrównuje nam to elementy na środek*/
-	/* te dwa elementy fajnie nam wyrównują wszystkie elementy w tym kontenerze bez marginów i zbędnych pierdół*/
+.info-rectangle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 90%;
 	max-width: 350px;
 	height: 15vh;
 	max-height: 120px;
 	background: var(--nike-dark-blue);
 	border-radius: 15px;
+	margin: 25px 0;
 }
 
-.open-hours-head {
+.info-head {
 	color: var(--nike-golden);
+	text-align: center;
 }
-.open-hours-text {
+.info-text {
 	color: #ffffff;
 	text-align: center;
 }
-.open-hours-img {
+.info-img {
 	width: 75px;
 	margin-right: 5%;
 }
-/* Zerknij sobie na różnicę w używaniu różnych stylów i i lości kodu. Niepotrzebne marginy line heighty itd itd*/
-/* latwo jest przekombinować mimo, że działa tak czy siak ale można to zrobić w prostrzy i ładniejszy sposób*/
-.telephone {
-	width: 90vw;
-	max-width: 367px;
-	height: 13vh;
-	max-height: 120px;
-	margin: 5vh auto;
 
-	background: #181a20;
-	border-radius: 15px;
+.phone {
+	margin-right: 20%;
 }
-.telephone-header {
-	margin-left: 30%;
-	font-size: 25px;
-	text-align: center;
-	color: var(--nike-golden);
-}
-.telephone-text {
-	margin-top: 0px;
-	margin-left: 11vh;
-	font-size: 19px;
-	line-height: 40px;
-	text-align: center;
 
-	color: #ffffff;
+.phone .info-head {
+	font-size: 1.8em;
 }
-.telephone-img {
-	max-width: 22vw;
-	max-height: 8vh;
-	margin: -28px 0 0 1.3vh;
-}
-.e-mail {
-	width: 90vw;
-	max-width: 367px;
-	height: 13vh;
-	max-height: 120px;
-	margin: 5vh auto;
 
-	background: #181a20;
-	border-radius: 15px;
+.phone-img {
+	margin-right: 15%;
 }
-.e-mail-header {
-	margin-left: 53%;
-	font-size: 2.5vh;
-
-	color: var(--nike-golden);
+.email-img {
+	margin-right: 10%;
 }
-.e-mail-text {
-	margin-top: 10px;
-	margin-left: 12vh;
-	font-size: 2vh;
-	line-height: 25px;
-	text-align: center;
-
-	color: #ffffff;
-}
-.e-mail-img {
-	max-width: 22vw;
-	max-height: 8vh;
-	margin: -1.5rem 0 0 1.4vh;
+.email {
+	margin-right: 10%;
 }
 
 @media screen and (min-width: 350px) {
-	.open-hours-img {
-		margin-right: 10%; /*To nam zmienia tylko to ,że od 350 px ten margin bedzie wynosić 10% zamiast 5%*/
+	.hours {
+		margin-right: 10%;
+	}
+	.phone {
+		margin-right: 15%;
+	}
+	.phone-img {
+		margin-right: 20%;
+	}
+	.email-img {
+		margin-left: 5%;
 	}
 }
 

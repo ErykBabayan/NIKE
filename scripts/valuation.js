@@ -43,7 +43,7 @@ function AddValueHrServices() {
 
 	if (isAddedeHrServices == false) {
 		isAddedeHrServices = true;
-		valuationPrice += 200;
+		valuationPrice += 40;
 
 		valuationText.textContent = "od " + valuationPrice + "zł";
 		document.getElementById("valuation-hr-services").style.display = "flex";
@@ -52,7 +52,7 @@ function AddValueHrServices() {
 		//console.log(hiddenInputInsert.value);
 	} else if (isAddedeHrServices == true) {
 		isAddedeHrServices = false;
-		valuationPrice -= 200;
+		valuationPrice -= 40;
 
 		valuationText.textContent = "od " + valuationPrice + "zł";
 		document.getElementById("valuation-hr-services").style.display = "none";
@@ -68,7 +68,7 @@ function AddValueAnnualSettelment() {
 
 	if (isAddedAnnualSettelment == false) {
 		isAddedAnnualSettelment = true;
-		valuationPrice += 500;
+		valuationPrice += 40;
 
 		valuationText.textContent = "od " + valuationPrice + "zł";
 		document.getElementById("valuation-annual-settelment").style.display = "flex";
@@ -77,7 +77,7 @@ function AddValueAnnualSettelment() {
 		//console.log(hiddenInputInsert.value);
 	} else if (isAddedAnnualSettelment == true) {
 		isAddedAnnualSettelment = false;
-		valuationPrice -= 500;
+		valuationPrice -= 40;
 
 		valuationText.textContent = "od " + valuationPrice + "zł";
 		document.getElementById("valuation-annual-settelment").style.display = "none";
@@ -93,7 +93,7 @@ function AddValueBookkeeping() {
 
 	if (isAddedBookkeeping == false) {
 		isAddedBookkeeping = true;
-		valuationPrice += 1000;
+		valuationPrice += 400;
 
 		valuationText.textContent = "od " + valuationPrice + "zł";
 		document.getElementById("valuation-bookkeeping").style.display = "flex";
@@ -102,7 +102,7 @@ function AddValueBookkeeping() {
 		//console.log(hiddenInputInsert.value);
 	} else if (isAddedBookkeeping == true) {
 		isAddedBookkeeping = false;
-		valuationPrice -= 1000;
+		valuationPrice -= 400;
 
 		valuationText.textContent = "od " + valuationPrice + "zł";
 		document.getElementById("valuation-bookkeeping").style.display = "none";
@@ -118,7 +118,7 @@ function AddValueRevenueBook() {
 
 	if (isAddedRevenueBook == false) {
 		isAddedRevenueBook = true;
-		valuationPrice += 800;
+		valuationPrice += 250;
 
 		valuationText.textContent = "od " + valuationPrice + "zł";
 		document.getElementById("valuation-revenue-book").style.display = "flex";
@@ -127,7 +127,7 @@ function AddValueRevenueBook() {
 		//console.log(hiddenInputInsert.value);
 	} else if (isAddedRevenueBook == true) {
 		isAddedRevenueBook = false;
-		valuationPrice -= 800;
+		valuationPrice -= 250;
 
 		valuationText.textContent = "od " + valuationPrice + "zł";
 		document.getElementById("valuation-revenue-book").style.display = "none";
@@ -143,7 +143,7 @@ function AddValueFinacialReport() {
 
 	if (isAddedFinacialReport == false) {
 		isAddedFinacialReport = true;
-		valuationPrice += 450;
+		valuationPrice += 400;
 
 		valuationText.textContent = "od " + valuationPrice + "zł";
 		document.getElementById("valuation-finacial-report").style.display = "flex";
@@ -152,7 +152,7 @@ function AddValueFinacialReport() {
 		//console.log(hiddenInputInsert.value);
 	} else if (isAddedFinacialReport == true) {
 		isAddedFinacialReport = false;
-		valuationPrice -= 450;
+		valuationPrice -= 400;
 
 		valuationText.textContent = "od " + valuationPrice + "zł";
 		document.getElementById("valuation-finacial-report").style.display = "none";

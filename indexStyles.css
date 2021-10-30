@@ -356,6 +356,7 @@ section.animated-circles {
 	text-align: center;
 	font-size: 16px;
 	max-width: 100%;
+	padding: 5%;
 	background-size: cover;
 }
 
