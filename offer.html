@@ -31,9 +31,9 @@
 						<img src="Images/icons/home page icon.png" alt="home icon" class="sidenav-icon" />
 						<p>Strona główna</p>
 					</div>
-					<div onclick="location.href='offer.html'">
-						<img src="Images/icons/offer icon.png" alt="offer icon" class="sidenav-icon" />
-						<p>Oferta</p>
+					<div onclick="location.href='contact.html'">
+						<img src="Images/icons/contact icon.png" alt="contact icon" class="sidenav-icon" />
+						<p>Kontakt</p>
 					</div>
 					<div onclick="closeNav();location.href='index.html#offer-on-start'">
 						<img src="Images/icons/start offer icon.png" alt="start offer icon" class="sidenav-icon" />
@@ -86,7 +86,7 @@
 
 		<section class="offer-section">
 			<h1 class="offer-head">Kompleksowe usługi</h1>
-
+			<!--1-->
 			<div class="offer-container">
 				<img class="offer-img" src="Images/icons/new business.png" alt="icon of a company" />
 				<h2 class="offer-description-head one-line-text">Zakładanie firmy</h2>
@@ -97,48 +97,12 @@
 					</button>
 					<div class="offer-explanation-container" id="hide-new-business" style="display: none">
 						<p class="offer-explanation-text">Kompleksowa pomoc w przygotowaniu dokumentów zgłoszeniowych dla nowych przesiębiorców</p>
-						<p class="offer-explanation-cost">Bezpłatne</p>
+						<p class="offer-explanation-cost">Bezpłatne *</p>
 						<button onclick="AddValueNewBusiness()" class="offer-explanation-button">Dodaj</button>
 					</div>
 				</div>
 			</div>
-			<div class="offer-container">
-				<img class="offer-img" src="Images/icons/hr-services.png" alt="hr services" />
-				<h2 class="offer-description-head">
-					Obsługa <br />
-					kadrowo - płacowa
-				</h2>
-				<div class="offer-show-container" id="wrap-hr-services">
-					<button onclick="toggleHrServices()" class="offer-show-button" id="rotate-hr-services">
-						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
-					</button>
-					<div class="offer-explanation-container" id="hide-hr-services" style="display: none">
-						<p class="offer-explanation-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellendus quam optio error, ipsa magni dolorum
-							dolore! Ab, sint quibusdam!
-						</p>
-						<p class="offer-explanation-cost">Od: 200zł</p>
-						<button onclick="AddValueHrServices()" class="offer-explanation-button">Dodaj</button>
-					</div>
-				</div>
-			</div>
-			<div class="offer-container">
-				<img class="offer-img" src="Images/icons/annual settelment.png" alt="annual settelment icon" />
-				<h2 class="offer-description-head one-line-text">Rozliczenia roczne</h2>
-				<div class="offer-show-container" id="wrap-annual-settelment">
-					<button onclick="toggleAnnualSettelment()" class="offer-show-button" id="rotate-annual-settelment">
-						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
-					</button>
-					<div class="offer-explanation-container" id="hide-annual-settelment" style="display: none">
-						<p class="offer-explanation-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur
-							deleniti debitis.
-						</p>
-						<p class="offer-explanation-cost">Od: 500zł</p>
-						<button onclick="AddValueAnnualSettelment()" class="offer-explanation-button">Dodaj</button>
-					</div>
-				</div>
-			</div>
+			<!--2-->
 			<div class="offer-container">
 				<img class="offer-img" src="Images/icons/bookkeeping.png" alt="bookkeeping icon" />
 				<h2 class="offer-description-head">
@@ -151,14 +115,15 @@
 					</button>
 					<div class="offer-explanation-container" id="hide-bookkeeping" style="display: none">
 						<p class="offer-explanation-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur
-							deleniti debitis.
+							Dekretacje, księgowanie zgodnie z ustawą o rachunkowości, deklaracje CIT, rejestry VAT zgodnie z ustawą o podatku od
+							towarów i usług
 						</p>
-						<p class="offer-explanation-cost">Od: 1000zł</p>
+						<p class="offer-explanation-cost">Od: 400zł</p>
 						<button onclick="AddValueBookkeeping()" class="offer-explanation-button">Dodaj</button>
 					</div>
 				</div>
 			</div>
+			<!--3-->
 			<div class="offer-container">
 				<img class="offer-img" src="Images/icons/revenue book.png" alt="revenue book icon" />
 				<h2 class="offer-description-head">
@@ -171,14 +136,15 @@
 					</button>
 					<div class="offer-explanation-container" id="hide-revenue-book" style="display: none">
 						<p class="offer-explanation-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur
-							deleniti debitis.
+							Ewidencja podatkowa zdarzeń gospodarczych zgodnie z ustawą o poof, rejestry VAT zgodnie z ustawą o podatku od towarów i
+							usług
 						</p>
-						<p class="offer-explanation-cost">Od: 800zł</p>
+						<p class="offer-explanation-cost">Od: 250zł</p>
 						<button onclick="AddValueRevenueBook()" class="offer-explanation-button">Dodaj</button>
 					</div>
 				</div>
 			</div>
+			<!--4-->
 			<div class="offer-container">
 				<img class="offer-img" src="Images/icons/Finacial report.png" alt=" finacial report icon" />
 				<h2 class="offer-description-head one-line-text">Sprawozdania finansowe</h2>
@@ -187,15 +153,49 @@
 						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
 					</button>
 					<div class="offer-explanation-container" id="hide-finacial-report" style="display: none">
-						<p class="offer-explanation-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur
-							deleniti debitis.
-						</p>
-						<p class="offer-explanation-cost">Od: 450zł</p>
+						<p class="offer-explanation-text">Bilans, rachunek zysków i strat, informacja dodatkowa</p>
+						<p class="offer-explanation-cost">Od: 400zł</p>
 						<button onclick="AddValueFinacialReport()" class="offer-explanation-button">Dodaj</button>
 					</div>
 				</div>
 			</div>
+			<!--5-->
+			<div class="offer-container">
+				<img class="offer-img" src="Images/icons/annual settelment.png" alt="annual settelment icon" />
+				<h2 class="offer-description-head one-line-text">Rozliczenia roczne</h2>
+				<div class="offer-show-container" id="wrap-annual-settelment">
+					<button onclick="toggleAnnualSettelment()" class="offer-show-button" id="rotate-annual-settelment">
+						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
+					</button>
+					<div class="offer-explanation-container" id="hide-annual-settelment" style="display: none">
+						<p class="offer-explanation-text">
+							Składamy również zeznania roczne dla osób fizycznych nie prowadzących działalności gospodarczej i osób pracujących za
+							granicą
+						</p>
+						<p class="offer-explanation-cost">Od: 40zł</p>
+						<button onclick="AddValueAnnualSettelment()" class="offer-explanation-button">Dodaj</button>
+					</div>
+				</div>
+			</div>
+			<!--6-->
+			<div class="offer-container">
+				<img class="offer-img" src="Images/icons/hr-services.png" alt="hr services" />
+				<h2 class="offer-description-head">
+					Obsługa <br />
+					kadrowo - płacowa
+				</h2>
+				<div class="offer-show-container" id="wrap-hr-services">
+					<button onclick="toggleHrServices()" class="offer-show-button" id="rotate-hr-services">
+						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
+					</button>
+					<div class="offer-explanation-container" id="hide-hr-services" style="display: none">
+						<p class="offer-explanation-text">Lista płac, kartoteki wynagrodzeń, deklaracje ZUS, PIT-11, PIT-4R</p>
+						<p class="offer-explanation-cost">Od: 40zł za osobę</p>
+						<button onclick="AddValueHrServices()" class="offer-explanation-button">Dodaj</button>
+					</div>
+				</div>
+			</div>
+			<!--7-->
 			<div class="offer-container">
 				<img class="offer-img" src="Images/icons/company success.png" alt="company success icon" />
 				<h2 class="offer-description-head one-line-text">Sukces firmy</h2>
@@ -205,8 +205,8 @@
 					</button>
 					<div class="offer-explanation-container" id="hide-company-success" style="display: none">
 						<p class="offer-explanation-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus beatae amet eos nulla, qui atque molestiae aspernatur
-							deleniti debitis.
+							Naszym sukcesem są sukcesy naszych klientów. Dlatego dokładamy wszelkich starań aby działaność klienta rozwijała przy nas
+							swoje skrzydła
 						</p>
 						<p class="offer-explanation-cost">Bezcenne</p>
 						<button onclick="AddValueCompanySuccess()" class="offer-explanation-button">Dodaj</button>
@@ -229,27 +229,27 @@
 					<div class="valuation-list" id="valuation-hr-services" style="display: none">
 						<img class="valuation-list-img" src="Images/icons/hr-services.png" alt="" />
 						<p class="valuation-list-text">Obsługa kadrowo-płacowa</p>
-						<p class="offer-explanation-cost">Od: 200zł</p>
+						<p class="offer-explanation-cost">Od: 40zł za osobę</p>
 					</div>
 					<div class="valuation-list" id="valuation-annual-settelment" style="display: none">
 						<img class="valuation-list-img" src="Images/icons/annual settelment.png" alt="" />
 						<p class="valuation-list-text">Rozliczenia roczne</p>
-						<p class="offer-explanation-cost">Od: 500zł</p>
+						<p class="offer-explanation-cost">Od: 40zł</p>
 					</div>
 					<div class="valuation-list" id="valuation-bookkeeping" style="display: none">
 						<img class="valuation-list-img" src="Images/icons/bookkeeping.png" alt="" />
 						<p class="valuation-list-text">Prowadzenie ksiąg handlowych</p>
-						<p class="offer-explanation-cost">Od: 1000zł</p>
+						<p class="offer-explanation-cost">Od: 400zł</p>
 					</div>
 					<div class="valuation-list" id="valuation-revenue-book" style="display: none">
 						<img class="valuation-list-img" src="Images/icons/revenue book.png" alt="" />
 						<p class="valuation-list-text">Księgi przychodów i rozchodów</p>
-						<p class="offer-explanation-cost">Od: 1000zł</p>
+						<p class="offer-explanation-cost">Od: 250zł</p>
 					</div>
 					<div class="valuation-list" id="valuation-finacial-report" style="display: none">
 						<img class="valuation-list-img" src="Images/icons/Finacial report.png" alt="" />
 						<p class="valuation-list-text">Sprawozdanie finansowe</p>
-						<p class="offer-explanation-cost">Od: 450zł</p>
+						<p class="offer-explanation-cost">Od: 400zł</p>
 					</div>
 					<div class="valuation-list" id="valuation-company-success">
 						<img class="valuation-list-img" src="Images/icons/company success.png" alt="" />
@@ -262,6 +262,10 @@
 
 				<div class="valuation-text">
 					Oferta wydaje się korzystna ? Wyślij do nas zgłoszenie z dodanymi usługami a odezwiemy się z gotową ofertą
+				</div>
+				<div class="valuation-text">
+					Podane ceny są kwotami netto <br />
+					* W wypadku zaakceptowania warunków współpracy
 				</div>
 			</div>
 
