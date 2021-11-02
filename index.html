@@ -4,12 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta
-		name="keywords"
-		content="obsługa kadrowo-płacowa,doradztwo,biuro rachunkowe,pełna księgowość,usługi księgowe,biuro rachunkowe piotrków trybunalski,księgowa piotrków trybunalski"
+			name="keywords"
+			content="obsługa kadrowo-płacowa,doradztwo,biuro rachunkowe,pełna księgowość,usługi księgowe,biuro rachunkowe piotrków trybunalski,księgowa piotrków trybunalski"
 		/>
 		<meta
-		name="description"
-		content="Biuro rachunkowe NIKE w Piotrkowie Trybunalskim to doświadczona księgowa gwarantująca profesjonalne usługi księgowe oraz rachunkowo-podatkowe. Serdecznie zapraszamy!"
+			name="description"
+			content="Biuro rachunkowe NIKE w Piotrkowie Trybunalskim to doświadczona księgowa gwarantująca profesjonalne usługi księgowe oraz rachunkowo-podatkowe. Serdecznie zapraszamy!"
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="indexStyles.css" />
@@ -25,27 +25,29 @@
 	<body id="block-scrolling">
 		<header>
 			<div class="header">
-				
-				<img  onclick="window.location = 'index.html'" src="Images/Logo/Logo.png" alt="Logo" class="logo">
-				<nav class="nav-bar" style="display: none;">
-					<div class="nav-bar-container">
-						<div onclick="location.href='offer.html'">
-							<p>Oferta</p>
-						</div>
-						<div onclick="location.href='contact.html'">
-							<p>Kontakt</p>
-						</div>
-						<div onclick="closeNav();location.href='#offer-on-start'">
-							<p>Oferta na start</p>
-						</div>
-						<div onclick="closeNav();location.href='#offer-refferal'">
-							<p>Program poleceń</p>
-						</div>
-						<div onclick="location.href='privacy.html'">
-							<p>Polityka prywatności</p>
-						</div>
-					<div/>
-				</nav>
+				<img onclick="window.location = 'index.html'" src="Images/Logo/Logo.png" alt="Logo" class="logo" />
+				<div class="nav-bar">
+					<div class="nav-container" onclick="window.location.href ='offer.html'">
+						<img src="Images/icons/offer icon.png" alt="" class="nav-icon" />
+						<p class="nav-text">Oferta</p>
+					</div>
+					<div class="nav-container" onclick="window.location.href ='contact.html'">
+						<img src="Images/icons/contact icon.png" alt="" class="nav-icon" />
+						<p class="nav-text">Kontakt</p>
+					</div>
+					<div class="nav-container" onclick="window.location.href ='#offer-on-start'">
+						<img src="Images/icons/start offer icon.png" alt="" class="nav-icon" />
+						<p class="nav-text">Na start</p>
+					</div>
+					<div class="nav-container" onclick="window.location.href ='#offer-refferal'">
+						<img src="Images/icons/handshake affiliate icon.png" alt="" class="nav-icon" />
+						<p class="nav-text">Polecenia</p>
+					</div>
+					<div class="nav-container" onclick="window.location.href ='privacy.html'">
+						<img src="Images/icons/privacy policy icon gold.png" alt="" class="nav-icon" />
+						<p class="nav-text">Prywatność</p>
+					</div>
+				</div>
 
 				<div class="menu-button" onclick="openNav()">
 					<div class="menu-icon"></div>
@@ -100,8 +102,6 @@
 				}
 			</script>
 		</header>
-
-
 
 		<section class="pop-up-section" style="display: none">
 			<div onclick="hide()" class="close-button">&times;</div>
