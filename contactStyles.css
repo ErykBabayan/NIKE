@@ -111,6 +111,7 @@ body {
 .info-head {
 	color: var(--nike-golden);
 	text-align: center;
+	padding-bottom: 5px;
 }
 .info-text {
 	color: #ffffff;
@@ -127,16 +128,17 @@ body {
 
 .phone .info-head {
 	font-size: 1.8em;
+	padding-bottom: 10px;
 }
 
 .phone-img {
 	margin-right: 15%;
 }
 .email-img {
-	margin-right: 10%;
+	margin-right: 5%;
 }
-.email {
-	margin-right: 10%;
+.email .info-head {
+	font-size: 1.8em;
 }
 
 @media screen and (min-width: 350px) {
@@ -150,7 +152,7 @@ body {
 		margin-right: 20%;
 	}
 	.email-img {
-		margin-left: 5%;
+		margin-right: 10%;
 	}
 }
 
