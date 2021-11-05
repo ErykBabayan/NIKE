@@ -58,6 +58,7 @@ button:active {
 .pop-up-container {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	padding: 3vh;
 }
 .pop-up-offer {
@@ -80,6 +81,43 @@ button:active {
 	text-decoration-color: var(--nike-golden);
 	text-decoration-thickness: 2px;
 	padding: 10% 0;
+}
+
+@media screen and (min-width: 575px) {
+	.pop-up-section {
+		width: 80%;
+		left: 30%;
+		top: 50%;
+		transform: translate(-30%, -50%);
+	}
+	.pop-up-head {
+		font-size: 2.5em;
+	}
+	.pop-up-text {
+		margin-right: 3%;
+		font-size: 1.8em;
+	}
+	.pop-up-offer {
+		font-size: 1.2em;
+	}
+	.close-text {
+		font-size: 1.2em;
+	}
+	.pop-up-buttons-container .call-us-button {
+		height: 50px;
+		width: 160px;
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.pop-up-section {
+		width: 50%;
+		max-width: 650px;
+		left: 40%;
+		top: 50%;
+		transform: translate(-40%, -50%);
+	}
 }
 
 /*POP-UP*/ /*POP-UP*/ /*POP-UP*/
