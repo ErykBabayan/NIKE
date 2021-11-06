@@ -202,7 +202,7 @@ button:active {
 	}
 }
 
-/*Laptop sizes*/ /*Laptop sizes*/ /*Laptop sizes*/
+/*Desktop sizes*/ /*Desktop sizes*/ /*Desktop sizes*/
 @media screen and (min-width: 1000px) {
 	.invite-section {
 		padding-top: 1.5rem;
@@ -216,6 +216,7 @@ button:active {
 	.invite-container {
 		width: 40%;
 		padding-top: 50px;
+		padding-left: 2%;
 		margin-right: 5%;
 	}
 	.invite-success-img {
@@ -237,6 +238,7 @@ button:active {
 		width: 50%;
 		max-width: 750px;
 		padding-top: 30px;
+		padding-left: 5%;
 	}
 	.invite-text {
 		font-size: 1.8em;
@@ -255,12 +257,6 @@ button:active {
 	background: white;
 }
 
-.about-us-container {
-	display: flex;
-	align-items: center;
-	border: 3px solid white; /* for deleting weird  .background-color-wrapper border bug */
-}
-
 .about-us-text {
 	padding: 0 5vw;
 	font-size: 18px;
@@ -275,6 +271,11 @@ button:active {
 	text-align: center;
 	font-size: clamp(1rem, 7vw, 2.2rem);
 }
+.about-us-container {
+	display: flex;
+	align-items: center;
+	border: 3px solid white; /* for deleting weird  .background-color-wrapper border bug */
+}
 
 .competition-text {
 	padding: 0 3vw;
@@ -283,19 +284,67 @@ button:active {
 .competition-image {
 	width: 50%;
 	max-height: 200px;
+	max-width: 250px;
 	padding: 0 3vw;
 }
 
+/*Mobile sizes*/ /*Mobile sizes*/ /*Mobile sizes*/
 @media screen and (max-width: 400px) {
 	.competition-text {
 		font-size: 16px;
 	}
 }
-
+/*Tablet sizes*/ /*Tablet sizes*/ /*Tablet sizes*/
 @media screen and (min-width: 500px) {
 	.competition-text {
 		text-align: center;
 		padding-left: 10vw;
+		font-size: 1.2em;
+	}
+	.about-us-text {
+		font-size: 1.2em;
+	}
+}
+/*Desktop sizes*/ /*Desktop sizes*/ /*Desktop sizes*/
+@media screen and (min-width: 1000px) {
+	.about-us-head {
+		padding-top: 12vh;
+		margin-bottom: 5vh;
+
+		font-size: 3rem;
+	}
+	.about-us-text {
+		padding: 0 20vw;
+		font-size: 1.5em;
+	}
+
+	.about-us-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 3px solid white; /* for deleting weird  .background-color-wrapper border bug */
+	}
+
+	.competition-text {
+		padding: 0 0 0 5vw;
+		font-size: 1.5em;
+		max-width: 1000px;
+	}
+	.competition-image {
+		max-height: 300px;
+		max-width: 300px;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.about-us-text {
+		padding: 0 30vw;
+	}
+	.competition-text {
+		padding: 0 0vw;
+	}
+	.competition-image {
+		max-height: 300px;
+		max-width: 350px;
 	}
 }
 
