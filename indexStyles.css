@@ -80,7 +80,8 @@ button:active {
 	text-decoration: underline;
 	text-decoration-color: var(--nike-golden);
 	text-decoration-thickness: 2px;
-	padding: 10% 0;
+	margin: 10% 0;
+	cursor: pointer;
 }
 
 @media screen and (min-width: 575px) {
@@ -128,30 +129,28 @@ button:active {
 }
 
 .invite-section {
-	height: 50vh;
-	min-height: 200px;
-	max-height: 200px;
+	height: 200px;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .invite-success-img {
 	width: 50%;
 	max-height: 200px;
-	padding: 3%;
+	padding: 20px;
+}
+.invite-container {
+	width: 50%;
+	padding: 20px;
+	padding-left: 5%;
 }
 
 .invite-text {
 	font-size: 1em;
 	color: #ffffff;
-	width: 50%;
-	padding: 10px;
-	padding-left: 5%;
-}
-
-.button-wrapper {
-	margin-top: -13%;
-	padding-left: 5%;
+	width: 100%;
 }
 
 .call-us-button {
@@ -163,6 +162,7 @@ button:active {
 	border-radius: 5px;
 	border: none;
 	cursor: pointer;
+	margin-top: 20px;
 }
 .call-us-button:hover {
 	background-color: rgb(255, 217, 0);
@@ -180,11 +180,69 @@ button:active {
 		font-size: 0.9em;
 		padding-right: 0;
 	}
-	.button-wrapper {
-		margin-top: -16%;
-	}
 	.invite-success-img {
 		padding-left: 0;
+	}
+}
+
+/*Tablet sizes*/ /*Tablet sizes*/ /*Tablet sizes*/
+
+@media screen and (min-width: 760px) {
+	.invite-container {
+		width: 50%;
+		padding-right: 0px;
+	}
+	.invite-text {
+		font-size: 1.2em;
+	}
+
+	.invite-success-img {
+		max-width: 300px;
+		padding-left: 0px;
+	}
+}
+
+/*Laptop sizes*/ /*Laptop sizes*/ /*Laptop sizes*/
+@media screen and (min-width: 1000px) {
+	.invite-section {
+		padding-top: 1.5rem;
+		height: 320px;
+	}
+	.invite-text {
+		font-size: 1.5em;
+		text-decoration: underline;
+		text-decoration-color: var(--nike-golden);
+	}
+	.invite-container {
+		width: 40%;
+		padding-top: 50px;
+		margin-right: 5%;
+	}
+	.invite-success-img {
+		max-width: 350px;
+		max-height: 280px;
+		padding-top: 0px;
+		margin-top: 20px;
+	}
+	.call-us-button {
+		width: 180px;
+		height: 50px;
+		background-color: var(--nike-golden);
+		font-size: 24px;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.invite-container {
+		width: 50%;
+		max-width: 750px;
+		padding-top: 30px;
+	}
+	.invite-text {
+		font-size: 1.8em;
+	}
+	.call-us-button {
+		margin-top: 40px;
 	}
 }
 
