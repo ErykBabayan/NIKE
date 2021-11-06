@@ -353,20 +353,33 @@ button:active {
 /*Circle-section*/ /*Circle-section*/ /*Circle-section*/
 
 .circles-head {
+	padding: 5vh 0;
+	margin-top: 30px;
 	text-align: center;
-	margin-top: 5vh;
 	font-size: clamp(0.5rem, 7vw, 2.5rem);
 	text-decoration: underline;
 	text-decoration-color: var(--nike-golden);
+	background-color: var(--nike-dark-blue);
+	color: white;
+	border-radius: 30px 30px 0 0;
 }
 
 section.animated-circles {
-	padding: 15vw 0 10vw 0;
+	padding: 0vw 0 10vw 0;
 	margin: auto;
 	text-align: center;
-	margin-top: 30px;
 	background-color: var(--nike-dark-blue);
-	border-radius: 30px;
+	border-radius: 0 0 30px 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.circle-container {
+	width: 33.3%;
+	min-width: 320px;
+	max-width: 450px;
+	margin: 2%;
 }
 
 .circular {
@@ -466,18 +479,58 @@ section.animated-circles {
 		font-size: 3em;
 	}
 	.bar {
-		clip: rect(0px, 196px, 195px, 97.5px);
+		clip: rect(0px, 195px, 195px, 97.5px);
 	}
 
 	.circle-text {
 		font-size: 1.7em;
 	}
-
+	.circle-text.one-line {
+		line-height: 78px;
+	}
 	.bar .progress {
 		clip: rect(0px, 97.5px, 234px, 0px);
 	}
 }
 
+@media screen and (min-width: 1000px) {
+	section.animated-circles {
+		padding: 5vw 0;
+	}
+	.circles-head {
+		margin-top: 25vh;
+		font-size: clamp(0.5rem, 7vw, 3rem);
+		text-decoration: underline;
+		text-decoration-color: var(--nike-golden);
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	/*175% of original mobile size*/
+	.circular {
+		margin: auto;
+		width: 50%;
+		height: 262.5px;
+		width: 262.5px;
+	}
+	.inner {
+		height: 250px;
+		width: 250px;
+		margin: -125px 0 0 -125px;
+	}
+
+	.bar {
+		clip: rect(0px, 262.5px, 262.5px, 131.25px);
+	}
+	.bar .progress {
+		clip: rect(0px, 131.25px, 315px, 0px);
+	}
+	.number-years,
+	.number-clients,
+	.number-optimisation {
+		font-size: 3.5em;
+	}
+}
 /*Circle-section*/ /*Circle-section*/ /*Circle-section*/
 
 /*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/
