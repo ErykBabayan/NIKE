@@ -26,6 +26,7 @@ header {
 	height: inherit;
 	padding: 5px;
 	padding-bottom: 10px;
+	cursor: pointer;
 }
 
 .menu-button {

@@ -671,6 +671,7 @@ section.animated-circles {
 		font-size: clamp(0.5rem, 7vw, 2.5rem);
 		margin-top: 20vh;
 	}
+
 	#offer-on-start {
 		margin: 15vh 0 10vh 0;
 		font-size: clamp(0.5rem, 7vw, 3rem);
@@ -730,6 +731,9 @@ section.animated-circles {
 	.startup-text-container {
 		padding-top: 50px;
 	}
+	.startup-rectangle-container {
+		margin-bottom: 30vh;
+	}
 }
 
 /*NEW_BUSINESSES_SECTION*/ /*NEW_BUSINESSE_SECTION*/ /*NEW_BUSINESSE_SECTION*/
@@ -746,14 +750,41 @@ section.animated-circles {
 	margin: auto;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .refferal-text {
 	padding-right: 5vw;
 	width: 60%;
 }
-.refferal-icon {
-	padding-bottom: 2vw;
+@media screen and (min-width: 800px) {
+	.refferal-head {
+		font-size: 2.5em;
+	}
+
+	.refferal-text {
+		font-size: 1.2em;
+		width: 40%;
+	}
+	.refferal-icon {
+		width: 150px;
+		height: 150px;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.refferal-head {
+		font-size: 3em;
+	}
+
+	.refferal-text {
+		font-size: 1.4em;
+		width: 40%;
+	}
+	.refferal-icon {
+		padding-bottom: 0vw;
+		width: 200px;
+		height: 200px;
+	}
 }
 
 /*REFFERAL-PROGRAM*/ /*REFFERAL-PROGRAM*/ /*REFFERAL-PROGRAM*/
@@ -795,4 +826,28 @@ section.animated-circles {
 .cookies-button:hover {
 	background-color: #ffc70f;
 }
+
+@media screen and (min-width: 800px) {
+	.cookies-banner {
+		padding: 2vw;
+	}
+	.cookies-text {
+		width: 100%;
+		text-align: center;
+	}
+
+	.cookies-button {
+		margin-top: 2%;
+		width: 120px;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.cookies-banner {
+		padding: 15px;
+	}
+	.cookies-button {
+		margin-top: 15px;
+	}
+}
+
 /*COOKIES*/ /*COOKIES*/ /*COOKIES*/

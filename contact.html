@@ -30,13 +30,13 @@
 			<div class="header">
 				<img onclick="window.location = 'index.html'" src="Images/Logo/Logo.png" alt="Logo" class="logo" />
 				<div class="nav-bar">
+					<div class="nav-container" onclick="window.location.href ='index.html'">
+						<img src="Images/icons/home page icon.png" alt="" class="nav-icon" />
+						<p class="nav-text">Home</p>
+					</div>
 					<div class="nav-container" onclick="window.location.href ='offer.html'">
 						<img src="Images/icons/offer icon.png" alt="" class="nav-icon" />
 						<p class="nav-text">Oferta</p>
-					</div>
-					<div class="nav-container" onclick="window.location.href ='contact.html'">
-						<img src="Images/icons/contact icon.png" alt="" class="nav-icon" />
-						<p class="nav-text">Kontakt</p>
 					</div>
 					<div class="nav-container" onclick="window.location.href ='index.html#offer-on-start'">
 						<img src="Images/icons/start offer icon.png" alt="" class="nav-icon" />
@@ -61,13 +61,13 @@
 			<div id="side-nav" class="sidenav">
 				<div id="delay">
 					<a class="closebtn" onclick="closeNav()">&times;</a>
+					<div onclick="location.href='index.html'">
+						<img src="Images/icons/home page icon.png" alt="home icon" class="sidenav-icon" />
+						<p>Home</p>
+					</div>
 					<div onclick="location.href='offer.html'">
 						<img src="Images/icons/offer icon.png" alt="offer icon" class="sidenav-icon" />
 						<p>Oferta</p>
-					</div>
-					<div onclick="location.href='contact.html'">
-						<img src="Images/icons/contact icon.png" alt="contact icon" class="sidenav-icon" />
-						<p>Kontakt</p>
 					</div>
 					<div onclick="closeNav();location.href='#offer-on-start'">
 						<img src="Images/icons/start offer icon.png" alt="start offer icon" class="sidenav-icon" />
@@ -172,9 +172,9 @@
 				<img src="Images/icons/go up icon.png" alt="up arrow icon" class="footer-icon up-icon" />
 				<p class="footer-text">Wróć</p>
 			</div>
-			<div onclick="location.href = 'offer.html'" class="footer-icon-container">
-				<img src="Images/icons/offer icon.png" alt="offer icon" class="footer-icon" />
-				<button class="footer-button">Oferta</button>
+			<div onclick="location.href = 'offer.html'" class="footer-icon-container contact-icon-container">
+				<img src="Images/icons/offer icon.png" alt="contact icon" class="footer-icon contact-icon" />
+				<div class="footer-button-wrapper"><button class="footer-button">Oferta</button></div>
 			</div>
 			<div onclick="location.href = 'index.html'" class="footer-icon-container">
 				<img src="Images/icons/home page icon white.png" alt="offer icon" class="footer-icon" />
