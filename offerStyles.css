@@ -31,6 +31,7 @@ body {
 	justify-content: center;
 }
 .free-valuation-head {
+	font-size: 1.5em;
 	margin: 10% 0;
 	color: white;
 	width: 90%;
@@ -43,13 +44,14 @@ body {
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	align-items: center;
 	width: 100%;
 	padding: 0 5% 5% 5%;
 }
 
 .free-valuation-text {
 	color: white;
-	padding: 5%;
+	padding-right: 3%;
 	font-size: 1.2em;
 }
 
@@ -68,6 +70,45 @@ body {
 	margin-bottom: 5%;
 }
 
+@media screen and (min-width: 720px) {
+	.free-valuation-head {
+		margin: 5% 0;
+		font-size: 1.8em;
+	}
+
+	.free-valuation-container {
+		width: 100%;
+		padding: 0 5% 1rem 5%;
+	}
+
+	.free-valuation-text {
+		font-size: 1.4em;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.free-valuation-head {
+		margin: 3% 0;
+		font-size: 2.4rem;
+	}
+
+	.free-valuation-container {
+		width: 100%;
+		padding: 0 5% 1rem 5%;
+	}
+	.free-valuation-img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.free-valuation-text {
+		font-size: 1.5em;
+	}
+	.call-us-button {
+		width: 160px;
+		font-size: 1.4em;
+		margin-bottom: 3%;
+	}
+}
 /*VALUATION SECTION*/ /*VALUATION SECTION*/ /*VALUATION SECTION*/ /*VALUATION SECTION*/
 
 /*OFFER SECTION*/ /*OFFER SECTION*/ /*OFFER SECTION*/ /*OFFER SECTION*/ /*OFFER SECTION*/
