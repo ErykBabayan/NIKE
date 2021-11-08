@@ -114,6 +114,10 @@
 
 		<section class="offer-section">
 			<h1 class="offer-head">Kompleksowe usługi</h1>
+
+			<div onclick="window.location.href='#rotate-company-success'" class="offer-cart" id="sticky-cart">
+				<img src="Images/icons/valuation list.png" alt="" class="offer-cart-img" />
+			</div>
 			<!--1-->
 			<div class="offer-container">
 				<img class="offer-img" src="Images/icons/new business.png" alt="icon of a company" />
@@ -237,88 +241,77 @@
 							swoje skrzydła
 						</p>
 						<p class="offer-explanation-cost">Bezcenne</p>
-						<button onclick="AddValueCompanySuccess()" class="offer-explanation-button">Dodaj</button>
+						<!--<button onclick="AddValueCompanySuccess()" class="offer-explanation-button">Dodaj</button>	-->
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="send-valuation-section">
-			<div class="valuation-text-container">
-				<h1 class="send-valuation-head">Lista wybranych usług:</h1>
-				<img onclick="toggleValuation()" src="Images/icons/valuation list.png" alt="valuation list icon" class="send-valuation-img" />
-
-				<div class="valuation-list-container" id="valuation-list" style="display: none">
-					<div class="valuation-list" id="valuation-new-business" style="display: none">
-						<img class="valuation-list-img" src="Images/icons/new business.png" alt="" />
-						<p class="valuation-list-text">Zakładanie firmy</p>
-						<p class="offer-explanation-cost">Bezpłatne</p>
+		<section class="valuation-section hide-sticky-cart">
+			<div class="valuation-list-container" id="valuation-list-container">
+				<h1 class="valuation-head">Lista wybranych usług:</h1>
+				<img onclick="toggleValuation()" src="Images/icons/valuation list.png" alt="valuation list icon" class="valuation-img" />
+				<div class="valuation-showcase-container" id="valuation-list" style="display: none">
+					<div class="valuation-showcase" id="valuation-new-business" style="display: none">
+						<img class="valuation-showcase-img" src="Images/icons/new business.png" alt="" />
+						<p class="valuation-showcase-text">Zakładanie firmy</p>
+						<p class="offer-explanation-cost">Bezpłatne *</p>
 					</div>
-					<div class="valuation-list" id="valuation-hr-services" style="display: none">
-						<img class="valuation-list-img" src="Images/icons/hr-services.png" alt="" />
-						<p class="valuation-list-text">Obsługa kadrowo-płacowa</p>
+					<div class="valuation-showcase" id="valuation-hr-services" style="display: none">
+						<img class="valuation-showcase-img" src="Images/icons/hr-services.png" alt="" />
+						<p class="valuation-showcase-text">Obsługa kadrowo-płacowa</p>
 						<p class="offer-explanation-cost">Od: 40zł za osobę</p>
 					</div>
-					<div class="valuation-list" id="valuation-annual-settelment" style="display: none">
-						<img class="valuation-list-img" src="Images/icons/annual settelment.png" alt="" />
-						<p class="valuation-list-text">Rozliczenia roczne</p>
+					<div class="valuation-showcase" id="valuation-annual-settelment" style="display: none">
+						<img class="valuation-showcase-img" src="Images/icons/annual settelment.png" alt="" />
+						<p class="valuation-showcase-text">Rozliczenia roczne</p>
 						<p class="offer-explanation-cost">Od: 40zł</p>
 					</div>
-					<div class="valuation-list" id="valuation-bookkeeping" style="display: none">
-						<img class="valuation-list-img" src="Images/icons/bookkeeping.png" alt="" />
-						<p class="valuation-list-text">Prowadzenie ksiąg handlowych</p>
+					<div class="valuation-showcase" id="valuation-bookkeeping" style="display: none">
+						<img class="valuation-showcase-img" src="Images/icons/bookkeeping.png" alt="" />
+						<p class="valuation-showcase-text">Prowadzenie ksiąg handlowych</p>
 						<p class="offer-explanation-cost">Od: 400zł</p>
 					</div>
-					<div class="valuation-list" id="valuation-revenue-book" style="display: none">
-						<img class="valuation-list-img" src="Images/icons/revenue book.png" alt="" />
-						<p class="valuation-list-text">Księgi przychodów i rozchodów</p>
+					<div class="valuation-showcase" id="valuation-revenue-book" style="display: none">
+						<img class="valuation-showcase-img" src="Images/icons/revenue book.png" alt="" />
+						<p class="valuation-showcase-text">Księgi przychodów i rozchodów</p>
 						<p class="offer-explanation-cost">Od: 250zł</p>
 					</div>
-					<div class="valuation-list" id="valuation-finacial-report" style="display: none">
-						<img class="valuation-list-img" src="Images/icons/Finacial report.png" alt="" />
-						<p class="valuation-list-text">Sprawozdanie finansowe</p>
+					<div class="valuation-showcase" id="valuation-finacial-report" style="display: none">
+						<img class="valuation-showcase-img" src="Images/icons/Finacial report.png" alt="" />
+						<p class="valuation-showcase-text">Sprawozdanie finansowe</p>
 						<p class="offer-explanation-cost">Od: 400zł</p>
 					</div>
-					<div class="valuation-list" id="valuation-company-success">
-						<img class="valuation-list-img" src="Images/icons/company success.png" alt="" />
-						<p class="valuation-list-text">Sukces firmy</p>
+					<div class="valuation-showcase" id="valuation-company-success">
+						<img class="valuation-showcase-img" src="Images/icons/company success.png" alt="" />
+						<p class="valuation-showcase-text">Sukces firmy</p>
 						<p class="offer-explanation-cost">Bezcenne</p>
 					</div>
-					<div class="valuation-list-text">Łączny koszt usług:</div>
+					<p class="valuation-showcase-text">Łączny koszt usług:</p>
 					<div id="valuation-cost" class="valuation-cost"></div>
-				</div>
-
-				<div class="valuation-text">
-					Oferta wydaje się korzystna ? Wyślij do nas zgłoszenie z dodanymi usługami a odezwiemy się z gotową ofertą
+					<p class="valuation-text">
+						Oferta wydaje się korzystna ? Wyślij do nas zgłoszenie z dodanymi usługami a odezwiemy się z gotową ofertą
+					</p>
 				</div>
 				<div class="valuation-text">
 					Podane ceny są kwotami netto <br />
 					* W wypadku zaakceptowania warunków współpracy
 				</div>
 			</div>
-
 			<div class="send-valuation-container">
+				<h1 class="valuation-head send-valuation-head">Napisz do nas</h1>
 				<form target="_blank" action="https://formsubmit.co/nike.ksiegowosc@wp.pl" method="POST">
 					<div class="form-input-container">
 						<input class="form-input" type="text" name="Imię" placeholder="Imię" required />
 					</div>
-
 					<div class="form-input-container">
 						<input class="form-input" type="email" name="E-mail" placeholder="E-mail" required />
 					</div>
 					<div class="form-input-container">
 						<input class="form-input" type="number" name="Telefon" placeholder="Telefon (opcjonalne)" />
 					</div>
-
 					<div class="form-input-container">
-						<textarea
-							id="form-textarea"
-							class="form-textarea"
-							placeholder="Tutaj wpisz swoją wiadomość..."
-							name="Wiadomość"
-							rows="10"
-							required
-						></textarea>
+						<textarea class="form-textarea" placeholder="Tutaj wpisz swoją wiadomość..." name="Wiadomość" rows="10" required></textarea>
 						<input
 							id="hidden-input-valuation"
 							class="form-input"
@@ -334,21 +327,51 @@
 					</div>
 				</form>
 			</div>
-
-			<footer class="footer offer-page">
-				<div onclick="location.href = '#top'" class="footer-icon-container up-icon-container">
-					<img src="Images/icons/go up icon.png" alt="up arrow icon" class="footer-icon up-icon" />
-					<p class="footer-text">Wróć</p>
-				</div>
-				<div onclick="location.href = 'contact.html'" class="footer-icon-container contact-icon-container">
-					<img src="Images/icons/contact icon.png" alt="contact icon" class="footer-icon contact-icon" />
-					<div class="footer-button-wrapper"><button class="footer-button">Kontakt</button></div>
-				</div>
-				<div onclick="location.href = 'index.html'" class="footer-icon-container">
-					<img src="Images/icons/home page icon white.png" alt="offer icon" class="footer-icon" />
-					<p class="footer-text">Główna</p>
-				</div>
-			</footer>
 		</section>
+
+		<footer class="footer offer-page">
+			<div onclick="location.href = '#top'" class="footer-icon-container up-icon-container">
+				<img src="Images/icons/go up icon.png" alt="up arrow icon" class="footer-icon up-icon" />
+				<p class="footer-text">Wróć</p>
+			</div>
+			<div onclick="location.href = 'contact.html'" class="footer-icon-container contact-icon-container">
+				<img src="Images/icons/contact icon.png" alt="contact icon" class="footer-icon contact-icon" />
+				<div class="footer-button-wrapper"><button class="footer-button">Kontakt</button></div>
+			</div>
+			<div onclick="location.href = 'index.html'" class="footer-icon-container">
+				<img src="Images/icons/home page icon white.png" alt="offer icon" class="footer-icon" />
+				<p class="footer-text">Główna</p>
+			</div>
+		</footer>
 	</body>
 </html>
+<!--Script is responsible for "hiding" sticky cart when original cart is shown-->
+<script>
+	window.addEventListener("load", (event) => {
+		createObserver();
+	});
+
+	function createObserver() {
+		let options = {
+			root: document.querySelector("#header"),
+			rootMargin: "0px",
+			threshold: 0.1,
+		};
+
+		let observer = new IntersectionObserver(callback, options);
+
+		let target = document.querySelector(".hide-sticky-cart");
+		observer.observe(target);
+	}
+
+	let callback = (entries, observer) => {
+		entries.forEach((entry) => {
+			console.log(entry.isIntersecting);
+			if (entry.isIntersecting == true) {
+				document.getElementById("sticky-cart").style.display = "none";
+			} else {
+				document.getElementById("sticky-cart").style.display = "flex";
+			}
+		});
+	};
+</script>

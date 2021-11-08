@@ -128,7 +128,25 @@ body {
 	text-decoration: underline;
 	text-decoration-color: var(--nike-golden);
 }
-
+.offer-cart {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	border: 2px solid var(--nike-golden);
+	background-color: var(--nike-dark-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+	transition: 0.5s;
+}
+.offer-cart-img {
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+}
 .offer-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -182,6 +200,7 @@ body {
 	text-align: center;
 	margin-top: 5%;
 	font-size: 1.1em;
+	height: 150px;
 }
 
 .offer-explanation-cost {
@@ -251,33 +270,55 @@ button:active {
 	}
 }
 
+@media screen and (min-width: 1000px) {
+	.offer-section {
+		padding: 30px;
+	}
+	.offer-head {
+		padding: 60px;
+		font-size: 3em;
+	}
+	.offer-container {
+		padding: 3% 0;
+		margin: 2rem;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.offer-section {
+		padding: 60px;
+	}
+}
+
 /*OFFER SECTION*/ /*OFFER SECTION*/ /*OFFER SECTION*/ /*OFFER SECTION*/ /*OFFER SECTION*/
 
 /*SEND VALUATION FORM*/ /*SEND VALUATION FORM*/ /*SEND VALUATION FORM*/ /*SEND VALUATION FORM*/
 
-.form-input-container {
-	display: flex;
-	justify-content: center;
-	padding-bottom: 8%;
-}
-
-.valuation-text-container {
+.valuation-section {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: left;
+	justify-content: center;
+	align-items: center;
+}
+
+.valuation-list-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
 	padding: 5%;
 }
 
-.send-valuation-head {
+.valuation-head {
 	color: white;
-	font-size: 6.5vw;
+	font-size: clamp(1.2rem, 6vw, 2.2rem);
 }
-.send-valuation-img {
+.valuation-img {
 	width: 75px;
+	margin: 2%;
 }
 
-.valuation-list-container {
+.valuation-showcase-container {
 	margin-top: 30px;
 	padding: 2%;
 	display: flex;
@@ -287,7 +328,7 @@ button:active {
 	background-color: var(--nike-light-black);
 	border-radius: 15px;
 }
-.valuation-list {
+.valuation-showcase {
 	margin: 2%;
 	padding: 2%;
 	border-radius: 15px;
@@ -298,10 +339,10 @@ button:active {
 	align-content: center;
 	max-width: 260px;
 }
-.valuation-list-img {
+.valuation-showcase-img {
 	width: 50px;
 }
-.valuation-list-text {
+.valuation-showcase-text {
 	color: white;
 	width: 100%;
 	text-align: center;
@@ -311,14 +352,32 @@ button:active {
 	color: var(--nike-golden);
 	text-align: center;
 	width: 100%;
-	padding: 5%;
+	padding: 2%;
 	font-size: 24px;
 }
 .valuation-text {
 	color: white;
 	margin-top: 20px;
+	text-align: center;
 }
 
+.send-valuation-container {
+	padding-top: 5vh;
+	width: 100%;
+}
+.send-valuation-head {
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: clamp(1.8rem, 7vw, 2.2rem);
+}
+
+.form-input-container {
+	padding-bottom: 5%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .form-input,
 .form-textarea {
 	width: 90%;
@@ -372,5 +431,69 @@ button:active {
 	}
 	.form-textarea {
 		line-height: 15px;
+	}
+}
+@media screen and (min-width: 500px) {
+	.form-textarea,
+	.form-input {
+		font-size: 1.2rem;
+	}
+	.valuation-text {
+		font-size: 1.2em;
+	}
+	.valuation-showcase-text {
+		font-size: 1.2em;
+	}
+	.form-input-container {
+		padding-bottom: 25px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.valuation-section {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.valuation-list-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 5%;
+		padding-top: 2%;
+		width: 50%;
+	}
+	.valuation-head {
+		font-size: 3vw;
+	}
+	.send-valuation-head {
+		text-align: center;
+		padding-bottom: 60px;
+	}
+
+	.send-valuation-container {
+		width: 50%;
+	}
+
+	.form-input-container {
+		padding-bottom: 4%;
+
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media screen and (min-width: 1100px) {
+	.valuation-list-container {
+		padding-right: 2%;
+	}
+	.valuation-list-container {
+		width: 65%;
+	}
+	.send-valuation-container {
+		width: 35%;
 	}
 }
