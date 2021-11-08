@@ -24,7 +24,7 @@ function AddValueNewBusiness() {
 		document.getElementById("valuation-new-business").style.display = "flex";
 		hiddenInputInsert.value += " |Zakładanie firmy ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid rgb(163, 255, 102)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -36,7 +36,7 @@ function AddValueNewBusiness() {
 		document.getElementById("valuation-new-business").style.display = "none";
 		hiddenInputInsert.value += " Bez zakładania firmy| ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid  rgb(252, 65, 65)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -56,7 +56,7 @@ function AddValueBookkeeping() {
 		document.getElementById("valuation-bookkeeping").style.display = "flex";
 		hiddenInputInsert.value += " |Prowadzenie ksiąg handlowych ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid rgb(163, 255, 102)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -69,7 +69,7 @@ function AddValueBookkeeping() {
 		document.getElementById("valuation-bookkeeping").style.display = "none";
 		hiddenInputInsert.value += " Bez prowadzenia ksiąg handlowych| ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid  rgb(252, 65, 65)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -89,7 +89,7 @@ function AddValueRevenueBook() {
 		document.getElementById("valuation-revenue-book").style.display = "flex";
 		hiddenInputInsert.value += " |Księgi przychodów i rozchodów ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid rgb(163, 255, 102)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -103,7 +103,7 @@ function AddValueRevenueBook() {
 		document.getElementById("valuation-revenue-book").style.display = "none";
 		hiddenInputInsert.value += " Bez ksiąg przychodów i rozchodów| ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid  rgb(252, 65, 65)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -123,7 +123,7 @@ function AddValueFinacialReport() {
 		document.getElementById("valuation-finacial-report").style.display = "flex";
 		hiddenInputInsert.value += " |Sprawozdanie finansowe ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid rgb(163, 255, 102)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -136,7 +136,7 @@ function AddValueFinacialReport() {
 		document.getElementById("valuation-finacial-report").style.display = "none";
 		hiddenInputInsert.value += " Bez sprawozdania finansowego| ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid  rgb(252, 65, 65)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -156,7 +156,7 @@ function AddValueAnnualSettelment() {
 		document.getElementById("valuation-annual-settelment").style.display = "flex";
 		hiddenInputInsert.value += " |Rozliczenie roczne ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid rgb(163, 255, 102)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -170,7 +170,7 @@ function AddValueAnnualSettelment() {
 		document.getElementById("valuation-annual-settelment").style.display = "none";
 		hiddenInputInsert.value += " Bez rozliczenia rocznego| ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid  rgb(252, 65, 65)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -191,7 +191,7 @@ function AddValueHrServices() {
 		document.getElementById("valuation-hr-services").style.display = "flex";
 		hiddenInputInsert.value += " |Obsługa kadrowo-płacowa ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid rgb(163, 255, 102)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -205,7 +205,7 @@ function AddValueHrServices() {
 		document.getElementById("valuation-hr-services").style.display = "none";
 		hiddenInputInsert.value += " Bez obsługi kadrowo-płacowej| ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid  rgb(252, 65, 65)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -226,7 +226,7 @@ function AddValueCompanySuccess() {
 		document.getElementById("valuation-company-success").style.display = "flex";
 		hiddenInputInsert.value += " |Sukces firmy ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid rgb(163, 255, 102)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);
@@ -239,7 +239,7 @@ function AddValueCompanySuccess() {
 		document.getElementById("valuation-company-success").style.display = "none";
 		hiddenInputInsert.value += " Bez sukcesu firmy| ";
 
-		document.getElementById("sticky-cart").style.border = "5px solid  rgb(252, 65, 65)";
+		document.getElementById("sticky-cart").style.border = "6px solid #ffe07a";
 		setTimeout(() => {
 			document.getElementById("sticky-cart").style.border = "2px solid var(--nike-golden)";
 		}, 200);

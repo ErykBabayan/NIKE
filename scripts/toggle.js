@@ -149,9 +149,9 @@ function toggleCompanySuccess() {
 function toggleValuation() {
 	if (isOpenedValuation == true) {
 		isOpenedValuation = false;
-		document.getElementById("valuation-list").style.display = "flex";
+		document.getElementById("valuation-list").style.display = "none";
 	} else if (isOpenedValuation == false) {
 		isOpenedValuation = true;
-		document.getElementById("valuation-list").style.display = "none";
+		document.getElementById("valuation-list").style.display = "flex";
 	}
 }
