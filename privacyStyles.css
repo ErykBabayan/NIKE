@@ -1,0 +1,42 @@
+@import url("https://use.typekit.net/xwb3qfr.css");
+:root {
+	--nike-light-black: #2b3139;
+	--nike-dark-blue: #181a20;
+	--nike-golden: #f0b90b;
+	--nike-golden-hover: #ffca1c;
+	--nike-golden-active: #ddab08;
+}
+
+* {
+	font-family: acumin-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	padding: 0;
+	margin: 0;
+	text-underline-offset: 0.2em;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--nike-light-black);
+}
+
+.policy-head {
+	padding: 5%;
+	text-align: center;
+	font-size: 3rem;
+	color: white;
+	text-decoration: underline;
+	text-decoration-color: var(--nike-golden);
+}
+.licence {
+	padding: 5%;
+	text-align: center;
+	font-size: 1.2rem;
+	color: white;
+}
+.policy {
+	color: white;
+	padding: 8%;
+}
