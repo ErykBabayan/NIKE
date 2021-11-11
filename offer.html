@@ -119,12 +119,12 @@
 				<img src="Images/icons/valuation list.png" alt="" class="offer-cart-img" />
 			</div>
 			<!--1-->
-			<div class="offer-container">
+			<div class="offer-container" onclick="toggleNewBusiness()">
 				<img class="offer-img" src="Images/icons/new business.png" alt="icon of a company" />
 				<h2 class="offer-description-head one-line-text">Zakładanie firmy</h2>
 
 				<div class="offer-show-container" id="wrap-new-business">
-					<button onclick="toggleNewBusiness()" class="offer-show-button" id="rotate-new-business">
+					<button class="offer-show-button" id="rotate-new-business">
 						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
 					</button>
 					<div class="offer-explanation-container" id="hide-new-business" style="display: none">
@@ -135,14 +135,14 @@
 				</div>
 			</div>
 			<!--2-->
-			<div class="offer-container">
+			<div class="offer-container" onclick="toggleBookkeeping()">
 				<img class="offer-img" src="Images/icons/bookkeeping.png" alt="bookkeeping icon" />
 				<h2 class="offer-description-head">
 					Prowadzenie <br />
 					ksiąg handlowych
 				</h2>
 				<div class="offer-show-container" id="wrap-bookkeeping">
-					<button onclick="toggleBookkeeping()" class="offer-show-button" id="rotate-bookkeeping">
+					<button class="offer-show-button" id="rotate-bookkeeping">
 						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
 					</button>
 					<div class="offer-explanation-container" id="hide-bookkeeping" style="display: none">
@@ -156,14 +156,14 @@
 				</div>
 			</div>
 			<!--3-->
-			<div class="offer-container">
+			<div class="offer-container" onclick="toggleRevenueBook()">
 				<img class="offer-img" src="Images/icons/revenue book.png" alt="revenue book icon" />
 				<h2 class="offer-description-head">
 					Księgi <br />
 					przychodów i rozchodów
 				</h2>
 				<div class="offer-show-container" id="wrap-revenue-book">
-					<button onclick="toggleRevenueBook()" class="offer-show-button" id="rotate-revenue-book">
+					<button class="offer-show-button" id="rotate-revenue-book">
 						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
 					</button>
 					<div class="offer-explanation-container" id="hide-revenue-book" style="display: none">
@@ -177,11 +177,11 @@
 				</div>
 			</div>
 			<!--4-->
-			<div class="offer-container">
+			<div class="offer-container" onclick="toggleFinacialReport()">
 				<img class="offer-img" src="Images/icons/Finacial report.png" alt=" finacial report icon" />
 				<h2 class="offer-description-head one-line-text">Sprawozdania finansowe</h2>
 				<div class="offer-show-container" id="wrap-finacial-report">
-					<button onclick="toggleFinacialReport()" class="offer-show-button" id="rotate-finacial-report">
+					<button class="offer-show-button" id="rotate-finacial-report">
 						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
 					</button>
 					<div class="offer-explanation-container" id="hide-finacial-report" style="display: none">
@@ -192,11 +192,11 @@
 				</div>
 			</div>
 			<!--5-->
-			<div class="offer-container">
+			<div class="offer-container" onclick="toggleAnnualSettelment()">
 				<img class="offer-img" src="Images/icons/annual settelment.png" alt="annual settelment icon" />
 				<h2 class="offer-description-head one-line-text">Rozliczenia roczne</h2>
 				<div class="offer-show-container" id="wrap-annual-settelment">
-					<button onclick="toggleAnnualSettelment()" class="offer-show-button" id="rotate-annual-settelment">
+					<button class="offer-show-button" id="rotate-annual-settelment">
 						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
 					</button>
 					<div class="offer-explanation-container" id="hide-annual-settelment" style="display: none">
@@ -210,14 +210,14 @@
 				</div>
 			</div>
 			<!--6-->
-			<div class="offer-container">
+			<div class="offer-container" onclick="toggleHrServices()">
 				<img class="offer-img" src="Images/icons/hr-services.png" alt="hr services" />
 				<h2 class="offer-description-head">
 					Obsługa <br />
 					kadrowo - płacowa
 				</h2>
 				<div class="offer-show-container" id="wrap-hr-services">
-					<button onclick="toggleHrServices()" class="offer-show-button" id="rotate-hr-services">
+					<button class="offer-show-button" id="rotate-hr-services">
 						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
 					</button>
 					<div class="offer-explanation-container" id="hide-hr-services" style="display: none">
@@ -228,11 +228,11 @@
 				</div>
 			</div>
 			<!--7-->
-			<div class="offer-container">
+			<div class="offer-container" onclick="toggleCompanySuccess()">
 				<img class="offer-img" src="Images/icons/company success.png" alt="company success icon" />
 				<h2 class="offer-description-head one-line-text">Sukces firmy</h2>
 				<div class="offer-show-container" id="wrap-company-success">
-					<button onclick="toggleCompanySuccess()" class="offer-show-button" id="rotate-company-success">
+					<button class="offer-show-button" id="rotate-company-success">
 						<img src="Images/icons/down-arrowhead.png" alt="down-arrowhead" />
 					</button>
 					<div class="offer-explanation-container" id="hide-company-success" style="display: none">
@@ -254,33 +254,39 @@
 				<div class="valuation-showcase-container" id="valuation-list">
 					<div class="valuation-showcase" id="valuation-new-business" style="display: none">
 						<img class="valuation-showcase-img" src="Images/icons/new business.png" alt="" />
-						<p class="valuation-showcase-text">Zakładanie firmy</p>
+						<p class="valuation-showcase-text one-line-text">Zakładanie firmy</p>
 						<p class="offer-explanation-cost">Bezpłatne *</p>
+						<button onclick="AddValueNewBusiness()" class="offer-explanation-button">Usuń</button>
 					</div>
 					<div class="valuation-showcase" id="valuation-hr-services" style="display: none">
 						<img class="valuation-showcase-img" src="Images/icons/hr-services.png" alt="" />
-						<p class="valuation-showcase-text">Obsługa kadrowo-płacowa</p>
+						<p class="valuation-showcase-text">Obsługa <br />kadrowo-płacowa</p>
 						<p class="offer-explanation-cost">Od: 40zł za osobę</p>
+						<button onclick="AddValueHrServices()" class="offer-explanation-button">Usuń</button>
 					</div>
 					<div class="valuation-showcase" id="valuation-annual-settelment" style="display: none">
 						<img class="valuation-showcase-img" src="Images/icons/annual settelment.png" alt="" />
-						<p class="valuation-showcase-text">Rozliczenia roczne</p>
+						<p class="valuation-showcase-text one-line-text">Rozliczenia roczne</p>
 						<p class="offer-explanation-cost">Od: 40zł</p>
+						<button onclick="AddValueAnnualSettelment()" class="offer-explanation-button">Usuń</button>
 					</div>
 					<div class="valuation-showcase" id="valuation-bookkeeping" style="display: none">
 						<img class="valuation-showcase-img" src="Images/icons/bookkeeping.png" alt="" />
 						<p class="valuation-showcase-text">Prowadzenie ksiąg handlowych</p>
 						<p class="offer-explanation-cost">Od: 400zł</p>
+						<button onclick="AddValueBookkeeping()" class="offer-explanation-button">Usuń</button>
 					</div>
 					<div class="valuation-showcase" id="valuation-revenue-book" style="display: none">
 						<img class="valuation-showcase-img" src="Images/icons/revenue book.png" alt="" />
 						<p class="valuation-showcase-text">Księgi przychodów i rozchodów</p>
 						<p class="offer-explanation-cost">Od: 250zł</p>
+						<button onclick="AddValueRevenueBook()" class="offer-explanation-button">Usuń</button>
 					</div>
 					<div class="valuation-showcase" id="valuation-finacial-report" style="display: none">
 						<img class="valuation-showcase-img" src="Images/icons/Finacial report.png" alt="" />
 						<p class="valuation-showcase-text">Sprawozdanie finansowe</p>
 						<p class="offer-explanation-cost">Od: 400zł</p>
+						<button onclick="AddValueFinacialReport()" class="offer-explanation-button">Usuń</button>
 					</div>
 					<div class="valuation-showcase" id="valuation-company-success">
 						<img class="valuation-showcase-img" src="Images/icons/company success.png" alt="" />

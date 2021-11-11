@@ -43,6 +43,7 @@ button:active {
 	right: 20px;
 	font-size: 2.5em;
 	left: initial;
+	cursor: pointer;
 }
 .pop-up-head {
 	text-decoration: underline;
