@@ -19,7 +19,9 @@
 	padding: 5vw 0;
 	justify-content: center;
 }
-
+.contact-page {
+	margin-top: 0px;
+}
 .offer-page {
 	background-color: var(--nike-light-black);
 }
@@ -84,11 +86,17 @@
 		margin-top: 1vh;
 		width: 80px;
 	}
+	.contact-page {
+		margin-top: 0vh;
+	}
 }
 @media screen and (min-width: 1400px) {
 	.footer {
 		margin-top: 5vh;
 		padding: 1vw 0;
+	}
+	.contact-page {
+		margin-top: 0vh;
 	}
 	.footer-icon-container {
 		margin: 0 3vw;
